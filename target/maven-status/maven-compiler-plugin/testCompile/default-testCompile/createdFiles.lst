@@ -1,0 +1,7 @@
+step_definitions\Auth\LoginSteps.class
+step_definitions\Hooks.class
+step_definitions\RunCukesTest.class
+step_definitions\Rating\UlasanStepDef.class
+step_definitions\Transaction\CheckAvailabelMentorStepDef.class
+step_definitions\Transaction\PaymentMethodStepDef.class
+step_definitions\Auth\RegisterSteps.class
