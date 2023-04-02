@@ -16,6 +16,9 @@ public class CheckScheduleMentors {
         Register.driver = driver;
     }
 
+    @FindBy(xpath = "//button[@id='btn-findmentor']")
+    private WebElement btnFindMentor;
+
     @FindBy(xpath = "//div[11]//img[@src='https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png']")
     private WebElement chooseMentor;
 
@@ -49,10 +52,9 @@ public class CheckScheduleMentors {
     @FindBy(xpath = "//button[@class='swal2-confirm swal2-styled swal2-default-outline']")
     private WebElement btnPopUpCheckAvailOk;
 
-    //div[.='Continue Payment']
-    //button[@class='btn bg-[#3A2BE8] mt-4 disabled:border-slate-200 disabled:cursor-not-alloweds']
-    @FindBy(xpath = "//button[@class='btn bg-[#3A2BE8] mt-4 disabled:border-slate-200 disabled:cursor-not-alloweds']")
-    private WebElement btnContiPayment;
+    public void setBtnFindMentor(){
+        btnFindMentor.click();
+    }
 
     public void setChooseMentor(){
         chooseMentor.click();
@@ -95,8 +97,13 @@ public class CheckScheduleMentors {
         btnCheckAvail.click();
     }
 
-    public void setBtnContiPayment(){
-        btnContiPayment.click();
+    public boolean setValidateMentorAvail(){
+        vldtCheckAvail.isEnabled();
+        return true;
+    }
+
+    public void setBtnPopUpCheckAvailOk(){
+        btnPopUpCheckAvailOk.click();
     }
 
 }

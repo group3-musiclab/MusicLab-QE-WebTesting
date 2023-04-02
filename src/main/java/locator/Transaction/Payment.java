@@ -15,6 +15,11 @@ public class Payment {
         Register.driver = driver;
     }
 
+    //div[.='Continue Payment']
+    //button[@class='btn bg-[#3A2BE8] mt-4 disabled:border-slate-200 disabled:cursor-not-alloweds']
+    @FindBy(xpath = "//button[@class='btn bg-[#3A2BE8] mt-4 disabled:border-slate-200 disabled:cursor-not-alloweds']")
+    private WebElement btnContiPayment;
+
     @FindBy(xpath = "//div[@class='merchant-name']")
     private WebElement validateMerchantName;
 
@@ -77,6 +82,10 @@ public class Payment {
 
     @FindBy(xpath = "//tr[15]/td[.='pending']")
     private WebElement validateNewSchedule;
+
+    public void setBtnContiPayment(){
+        btnContiPayment.click();
+    }
 
     public boolean setValidateMerchantName(){
         validateMerchantName.isEnabled();

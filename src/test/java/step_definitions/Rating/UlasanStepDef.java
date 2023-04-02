@@ -87,11 +87,4 @@ public class UlasanStepDef {
         Thread.sleep(2000);
         ulasan.setButtonPopupUlasanOk();
     }
-
-    //    Blank Comment and Star
-//    @Then("Button submit should disabled")
-//    public void buttonLoginShouldDisabled() {
-//        Ulasan ulasan = new Ulasan(webDriver);
-//        Assert.assertFalse(ulasan.());
-//    }
 }
