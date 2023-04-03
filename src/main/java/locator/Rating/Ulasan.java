@@ -27,7 +27,10 @@ public class Ulasan {
     @FindBy(xpath = "//h1[@class='text-button font-bold text-2xl']")
     private WebElement validateHistoryBelajar;
 
-    @FindBy(xpath = "//button[@id='btn-linkulasan']")
+    @FindBy(xpath = "//button[.='Next']")
+    private WebElement btnNext;
+
+    @FindBy(xpath = "//tbody[1]/tr[1]//button[@id='btn-linkulasan']")
     private WebElement btnBeriUlasan;
 
     @FindBy(xpath = "//h1[@class='text-black font-poppins font-semibold text-2xl']")
@@ -70,6 +73,7 @@ public class Ulasan {
     public void setBtnProfile(){
         btnProfile.click();
     }
+
     public void setBtnJadwal() throws InterruptedException{
         btnJadwal.click();
         Thread.sleep(3000);
@@ -78,6 +82,10 @@ public class Ulasan {
     public boolean setValidateHistoryBelajar(){
         validateHistoryBelajar.isEnabled();
         return true;
+    }
+
+    public void setBtnNext(){
+        btnNext.click();
     }
 
     public void setBeriUlasan(){

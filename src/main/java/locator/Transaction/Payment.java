@@ -154,6 +154,10 @@ public class Payment {
         btnBackToMerchant.click();
     }
 
+    public void setBtnPayNow(){
+        btnBackToMerchant.click();
+    }
+
     public boolean setValidateNoTransaction(){
         validateNoTransaction.isEnabled();
         return true;

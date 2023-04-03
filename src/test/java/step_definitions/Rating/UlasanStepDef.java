@@ -37,6 +37,13 @@ public class UlasanStepDef {
         Thread.sleep(3000);
     }
 
+    @And("Click button next page")
+    public void clickButtonNextPage() throws InterruptedException {
+        Ulasan ulasan = new Ulasan(webDriver);
+        ulasan.setBtnNext();
+        Thread.sleep(2000);
+    }
+
     @Then("Student click button beri ulasan")
     public void studentClickButtonBeriUlasan() throws InterruptedException {
         Ulasan ulasan = new Ulasan(webDriver);

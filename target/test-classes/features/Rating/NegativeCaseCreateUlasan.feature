@@ -10,7 +10,6 @@ Feature: [Negative Case] Validation And Create Ulasan
     And Student click button profile
     And Student click button jadwal
     And Validate history belajar page
-    And Click button next page
     Then Student click button beri ulasan
     And Student input comments "Sejarah Perang Baratayudha (Perang Pandawa dan Kurawa) written by Devita Retno Perang keluarga Bharata atau Baratayudha adalah puncak dari perseteruan yang terjadi antara Pandawa dan Kurawa. Semua ini bermula karena pihak Kurawa yang berambisi untuk menguasai Astinapura secara penuh kemudian melakukan segala cara untuk menyingkirkan Pandawa yang sebenarnya merupakan saudara mereka."
     And Validate comments field with 300 character
@@ -36,7 +35,6 @@ Feature: [Negative Case] Validation And Create Ulasan
     And Student click button profile
     And Student click button jadwal
     And Validate history belajar page
-    And Click button next page
     Then Student click button beri ulasan
     And Student input comments "Kursus yang sangat mantap"
     Then Click submit ulasan
@@ -50,7 +48,6 @@ Feature: [Negative Case] Validation And Create Ulasan
     And Student click button profile
     And Student click button jadwal
     And Validate history belajar page
-    And Click button next page
     Then Student click button beri ulasan
     Then Click submit ulasan
     And Validate Pop-up message failed give ratings

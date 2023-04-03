@@ -1,8 +1,8 @@
-@Capstone @PaymentMethodPositiveCase
-Feature: [Positive Case] Payment Method
-  This test case is everything about Positive Case Payment Method
+@Capstone @CheckAvailMentorPositiveCase
+Feature: [Positive Case] Check Schedule Mentors
+  This test case is everything about Positive Case Check Mentors Schedule
 
-  Scenario: Student will make payment transactions
+  Scenario: Student Check Available Schedule Mentors
     Given User click button login on home page
     When User input "mafa.alfa75@gmail.com" as email "321" as password and "Student" as role
     And Click login button
@@ -14,14 +14,7 @@ Feature: [Positive Case] Payment Method
     And Validate Name Course page
     Then Click button beli kursus
     And Validate Total Biaya course
-    Then Student set date course 20042027
+    Then Student set date course 20042030
     And Student set pilih hari "Friday"
     Then Student click button check available
     And Validate Pop-up message Schedule Mentor
-    Then Student click button Continue Payment
-    And Validate Payment Page
-    Then Choose BCA Klik Pay Method
-    And Validate Order ID
-    Then Click Button Pay Now
-    And Validate Transaction Number
-    Then Click button Bayar

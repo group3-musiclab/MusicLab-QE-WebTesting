@@ -4,13 +4,16 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import locator.Transaction.Payment;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WindowType;
+import org.openqa.selenium.support.FindBy;
 import step_definitions.Hooks;
 
 public class PaymentMethodStepDef {
 
     private final WebDriver webDriver;
+
 
     public PaymentMethodStepDef(){
         super();
@@ -21,7 +24,7 @@ public class PaymentMethodStepDef {
     public void clickBtnContinuePayment() throws InterruptedException {
         Payment payment = new Payment(webDriver);
         payment.setBtnContiPayment();
-        Thread.sleep(3000);
+        Thread.sleep(5000);
     }
 
     @And("Validate Payment Page")
@@ -110,6 +113,20 @@ public class PaymentMethodStepDef {
         Thread.sleep(3000);
     }
 
+    @And("Validate Order ID")
+    public void validateOrderId() throws InterruptedException {
+        Payment payment = new Payment(webDriver);
+        Assert.assertTrue(payment.setValidateOrderId());
+        Thread.sleep(3000);
+    }
+
+    @And("Click Button Pay Now")
+    public void btnPayNow()throws InterruptedException{
+        Payment payment = new Payment(webDriver);
+        payment.setBtnPayNow();
+        Thread.sleep(5000);
+    }
+
     @And("Validate Transaction Number")
     public void vldtTrsctionNumber() throws InterruptedException {
         Payment payment = new Payment(webDriver);
@@ -148,13 +165,6 @@ public class PaymentMethodStepDef {
     public void chooseDanamon() throws InterruptedException {
         Payment payment = new Payment(webDriver);
         payment.setDanamonMethod();
-        Thread.sleep(3000);
-    }
-
-    @And("Validate Order ID")
-    public void vldtOrderIDInfo() throws InterruptedException {
-        Payment payment = new Payment(webDriver);
-        payment.setValidateOrderId();
         Thread.sleep(3000);
     }
 
