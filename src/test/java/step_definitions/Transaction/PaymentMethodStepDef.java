@@ -5,10 +5,17 @@ import io.cucumber.java.en.Then;
 import locator.Transaction.Payment;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WindowType;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import step_definitions.Hooks;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
 
 public class PaymentMethodStepDef {
 
@@ -24,7 +31,7 @@ public class PaymentMethodStepDef {
     public void clickBtnContinuePayment() throws InterruptedException {
         Payment payment = new Payment(webDriver);
         payment.setBtnContiPayment();
-        Thread.sleep(5000);
+        Thread.sleep(3000);
     }
 
     @And("Validate Payment Page")
@@ -139,6 +146,13 @@ public class PaymentMethodStepDef {
         Payment payment = new Payment(webDriver);
         payment.setBtnBayar();
         Thread.sleep(3000);
+    }
+
+    @And("Validate Transaksi Sukses")
+    public void validateTransactionBcaKlikSuccess() throws InterruptedException {
+        Payment payment = new Payment(webDriver);
+        Assert.assertTrue(payment.setValidateTransactionSuccess());
+        Thread.sleep(3000);
         webDriver.close();
     }
 
@@ -184,3 +198,5 @@ public class PaymentMethodStepDef {
     }
 
 }
+
+//        webDriver.switchTo().window(String.valueOf(WindowType.TAB));

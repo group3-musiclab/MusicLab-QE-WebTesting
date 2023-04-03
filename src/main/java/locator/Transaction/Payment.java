@@ -1,8 +1,7 @@
 package locator.Transaction;
 
-import locator.Register;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import locator.Login;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -12,7 +11,7 @@ public class Payment {
 
     public Payment(WebDriver driver){
         PageFactory.initElements(driver, this);
-        Register.driver = driver;
+        Login.driver = driver;
     }
 
     //div[.='Continue Payment']
@@ -50,7 +49,10 @@ public class Payment {
     @FindBy(xpath = "//img[@alt='Akulaku']")
     private WebElement akulakuMethod;
 
-    @FindBy(xpath = "//img[@alt='BcaKlikPay']")
+    //a[.='BCA KlikPay']
+    //img[@alt='BcaKlikpay']
+    //a[@href='#/bca-klikpay']//div[@class='list-title text-actionable-bold']
+    @FindBy(xpath = "//a[.='BCA KlikPay']")
     private WebElement bcaklikMethod;
 
     @FindBy(xpath = "//div[@class='header-order-id']")
@@ -68,7 +70,7 @@ public class Payment {
     @FindBy(xpath = "//button[@class='btn full primary']")
     private WebElement btnBackToMerchant;
 
-    @FindBy(xpath = "//p[.='303832']")
+    @FindBy(xpath = "//label[.='Transaction No']")
     private WebElement validateNoTransaction;
 
     @FindBy(xpath = "//button[@class='btn btn-primary']")
@@ -88,7 +90,7 @@ public class Payment {
     }
 
     public boolean setValidateMerchantName(){
-        validateMerchantName.isEnabled();
+        validateMerchantName.isDisplayed();
         return true;
     }
 

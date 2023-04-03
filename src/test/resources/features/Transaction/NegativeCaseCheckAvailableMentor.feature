@@ -66,7 +66,7 @@ Feature: [Negative Case] Check Schedule Mentors
     Then Student click button check available
     And Validate Pop-up message Schedule Mentor
 
-  Scenario: Student Check Available Schedule Mentors
+  Scenario: Student Check Available Schedule Mentors with exiting Schedule
     Given User click button login on home page
     When User input "mafa.alfa75@gmail.com" as email "321" as password and "Student" as role
     And Click login button
@@ -78,7 +78,7 @@ Feature: [Negative Case] Check Schedule Mentors
     And Validate Name Course page
     Then Click button beli kursus
     And Validate Total Biaya course
-    Then Student set date course 20042030
+    Then Student set date course 02062023
     And Student set pilih hari "Friday"
     Then Student click button check available
     And Validate Pop-up message Schedule Mentor

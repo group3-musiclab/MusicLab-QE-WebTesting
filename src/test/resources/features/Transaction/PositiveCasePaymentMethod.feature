@@ -4,7 +4,7 @@ Feature: [Positive Case] Payment Method
 
   Scenario: Student will make payment transactions
     Given User click button login on home page
-    When User input "mafa.alfa75@gmail.com" as email "321" as password and "Student" as role
+    When User input "studentmusiclab@gmail.com" as email "@Qwerty1234" as password and "Student" as role
     And Click login button
     Then User already on home page again
     And Student click button Find Mentor
@@ -14,8 +14,8 @@ Feature: [Positive Case] Payment Method
     And Validate Name Course page
     Then Click button beli kursus
     And Validate Total Biaya course
-    Then Student set date course 20042027
-    And Student set pilih hari "Friday"
+    Then Student set date course 20042080
+    And Student set pilih hari "Wednesday"
     Then Student click button check available
     And Validate Pop-up message Schedule Mentor
     Then Student click button Continue Payment
@@ -25,3 +25,4 @@ Feature: [Positive Case] Payment Method
     Then Click Button Pay Now
     And Validate Transaction Number
     Then Click button Bayar
+    And Validate Transaksi Sukses

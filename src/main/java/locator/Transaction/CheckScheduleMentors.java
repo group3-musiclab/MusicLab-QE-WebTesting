@@ -20,7 +20,8 @@ public class CheckScheduleMentors {
     private WebElement btnFindMentor;
 
     //img[@src='https://alif-s3.s3.ap-southeast-1.amazonaws.com/BMs6vGfD3512hC4XBApnz.jpg']
-    @FindBy(xpath = "//img[@src='https://alif-s3.s3.ap-southeast-1.amazonaws.com/2G1np3CzXfBAsM56Dv4hB.jpg']")
+    //img[@src='https://alif-s3.s3.ap-southeast-1.amazonaws.com/2G1np3CzXfBAsM56Dv4hB.jpg']
+    @FindBy(xpath = "//img[@src='https://alif-s3.s3.ap-southeast-1.amazonaws.com/DspBM2fnGA5hvBX61zC34.png']")
     private WebElement chooseMentor;
 
     @FindBy(xpath = "//p[@class='text-5xl font-bold']")
@@ -39,7 +40,7 @@ public class CheckScheduleMentors {
     @FindBy(xpath = "//button[@id='btn-belikursus']")
     private WebElement btnBeliKursus;
 
-    @FindBy(xpath = "//div[@class='flex flex-col w-10/12 min-h-screen p-7 mt-8 space-y-2']/div[3]/p[.='Rp. 399000']")
+    @FindBy(xpath = "//div[@class='flex flex-col w-10/12 min-h-screen p-7 mt-8 space-y-2']/div[3]/p[.='Rp. 799000']")
     private WebElement validateTotalHarga;
 
     @FindBy(xpath = "//input[@id='input-start_date']")
