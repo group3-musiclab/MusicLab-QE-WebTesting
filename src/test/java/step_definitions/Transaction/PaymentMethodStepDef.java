@@ -110,6 +110,21 @@ public class PaymentMethodStepDef {
         Thread.sleep(3000);
     }
 
+    @And("Validate Transaction Number")
+    public void vldtTrsctionNumber() throws InterruptedException {
+        Payment payment = new Payment(webDriver);
+        payment.setValidateNoTransaction();
+        Thread.sleep(3000);
+    }
+
+    @And("Click button Bayar")
+    public void clickBtnBayar() throws InterruptedException {
+        Payment payment = new Payment(webDriver);
+        payment.setBtnBayar();
+        Thread.sleep(3000);
+        webDriver.close();
+    }
+
     // OCTO CLICKS METHOD
     @Then("Choose OCTO Clicks Method")
     public void chooseOctoClicks() throws InterruptedException {
@@ -136,18 +151,19 @@ public class PaymentMethodStepDef {
         Thread.sleep(3000);
     }
 
+    @And("Validate Order ID")
+    public void vldtOrderIDInfo() throws InterruptedException {
+        Payment payment = new Payment(webDriver);
+        payment.setValidateOrderId();
+        Thread.sleep(3000);
+    }
+
     @And("Click button Back To Merchant")
     public void clickBtnBackMerchant() throws InterruptedException {
         Payment payment = new Payment(webDriver);
         payment.setBtnBackToMerchant();
         Thread.sleep(3000);
-    }
-
-    @And("Click button Bayar")
-    public void clickBtnBayar() throws InterruptedException {
-        Payment payment = new Payment(webDriver);
-        payment.setBtnBayar();
-        Thread.sleep(3000);
+        webDriver.close();
     }
 
     @And("Click button Transaction Success")

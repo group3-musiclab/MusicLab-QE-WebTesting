@@ -28,13 +28,13 @@ public class CheckAvailabelMentorStepDef {
         CheckScheduleMentors checkScheduleMentors = new CheckScheduleMentors(webDriver);
         checkScheduleMentors.setChooseMentor();
         Thread.sleep(3000);
+        webDriver.navigate().refresh();
     }
 
     @And("Validate Mentor Profile page")
     public void validateMentorProfilePage() throws InterruptedException {
         CheckScheduleMentors checkScheduleMentors = new CheckScheduleMentors(webDriver);
-        Assert.assertTrue(checkScheduleMentors.setValidateCoursePage());
-        webDriver.navigate().refresh();
+        Assert.assertTrue(checkScheduleMentors.setValidateMentorsProfilePage());
         Thread.sleep(3000);
     }
 
@@ -81,24 +81,17 @@ public class CheckAvailabelMentorStepDef {
     }
 
     @And("Student click button check available")
-    public void clickButtonCheckAvail() {
+    public void clickButtonCheckAvail() throws InterruptedException{
         CheckScheduleMentors checkScheduleMentors = new CheckScheduleMentors(webDriver);
         checkScheduleMentors.setBtnCheckAvail();
+        Thread.sleep(3000);
     }
 
-    @And("Validate Pop-up message Schedule Mentor is Available")
+    @And("Validate Pop-up message Schedule Mentor")
     public void validatePopupMentorIsAvail() throws InterruptedException{
         CheckScheduleMentors checkScheduleMentors = new CheckScheduleMentors(webDriver);
         Assert.assertTrue(checkScheduleMentors.setValidateMentorAvail());
         Thread.sleep(2000);
         checkScheduleMentors.setBtnPopUpCheckAvailOk();
     }
-
-//    @And("Validate Pop-up message Schedule Mentor is Not Available")
-//    public void validateScheduleMentorNotAvail() throws InterruptedException{
-//        CheckScheduleMentors checkScheduleMentors = new CheckScheduleMentors(webDriver);
-//        Assert.assertTrue(checkScheduleMentors.());
-//        Thread.sleep(3000);
-//        CheckScheduleMentors.setButtonPopupUlasanOk();
-//    }
 }

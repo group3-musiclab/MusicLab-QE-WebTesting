@@ -19,13 +19,18 @@ public class CheckScheduleMentors {
     @FindBy(xpath = "//button[@id='btn-findmentor']")
     private WebElement btnFindMentor;
 
-    @FindBy(xpath = "//div[11]//img[@src='https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png']")
+    //img[@src='https://alif-s3.s3.ap-southeast-1.amazonaws.com/BMs6vGfD3512hC4XBApnz.jpg']
+    @FindBy(xpath = "//img[@src='https://alif-s3.s3.ap-southeast-1.amazonaws.com/2G1np3CzXfBAsM56Dv4hB.jpg']")
     private WebElement chooseMentor;
+
+    @FindBy(xpath = "//p[@class='text-5xl font-bold']")
+    private WebElement vldateMentorsProfilePage;
 
     @FindBy(xpath = "//p[@class='font-semibold text-xl']")
     private WebElement validateCoursePage;
 
-    @FindBy(xpath = "//div[@class='m-2 mt-7 grid grid-cols-2 space-x-5 gap-14']/div[5]//h2[@class='card-title']")
+    //img[@src='https://alif-s3.s3.ap-southeast-1.amazonaws.com/Mshz243XD1vnGpf5A6BCB.png']
+    @FindBy(xpath = "//img[@alt='Album']")
     private WebElement chooseCourse;
 
     @FindBy(xpath = "//h1[@class='text-black font-bold w-9/12 flex justify-start text-2xl font-poppins lg:mt-0 -mt-8']")
@@ -34,7 +39,7 @@ public class CheckScheduleMentors {
     @FindBy(xpath = "//button[@id='btn-belikursus']")
     private WebElement btnBeliKursus;
 
-    @FindBy(xpath = "//div[@class='flex flex-col w-10/12 min-h-screen p-7 mt-8 space-y-2']/div[3]/p[.='Rp. 325000']")
+    @FindBy(xpath = "//div[@class='flex flex-col w-10/12 min-h-screen p-7 mt-8 space-y-2']/div[3]/p[.='Rp. 399000']")
     private WebElement validateTotalHarga;
 
     @FindBy(xpath = "//input[@id='input-start_date']")
@@ -46,7 +51,7 @@ public class CheckScheduleMentors {
     @FindBy(xpath = "//button[@class='btn bg-[#3A2BE8] mt-4']")
     private WebElement btnCheckAvail;
 
-    @FindBy(xpath = "//h2[@class='swal2-title']")
+    @FindBy(xpath = "//div[@class='swal2-popup swal2-modal animate__animated animate__fadeIn animate__faster']")
     private WebElement vldtCheckAvail;
 
     @FindBy(xpath = "//button[@class='swal2-confirm swal2-styled swal2-default-outline']")
@@ -60,9 +65,14 @@ public class CheckScheduleMentors {
         chooseMentor.click();
     }
 
+    public boolean setValidateMentorsProfilePage(){
+        vldateMentorsProfilePage.isEnabled();
+        return true;
+    }
+
     public boolean setValidateCoursePage(){
         validateCoursePage.isEnabled();
-        return false;
+        return true;
     }
 
     public void setChooseCourse(){
