@@ -4,17 +4,9 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import locator.Transaction.Payment;
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WindowType;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.Wait;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import step_definitions.Hooks;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Set;
 
 public class PaymentMethodStepDef {
@@ -29,6 +21,13 @@ public class PaymentMethodStepDef {
 
     @Then("Student click button Continue Payment")
     public void clickBtnContinuePayment() throws InterruptedException {
+        Payment payment = new Payment(webDriver);
+        payment.setBtnContiPayment();
+        Thread.sleep(3000);
+    }
+
+    @Then("Student click button Continue Payment without select method")
+    public void clickBtnContinuePaymentWithoutChooseMethod() throws InterruptedException {
         Set<String> handles = webDriver.getWindowHandles();
         Payment payment = new Payment(webDriver);
         payment.setBtnContiPayment();
@@ -40,7 +39,11 @@ public class PaymentMethodStepDef {
 
     @And("Validate Payment Page")
     public void validatePaymentPage() throws InterruptedException{
+        Set<String> handles = webDriver.getWindowHandles();
         Payment payment = new Payment(webDriver);
+        for(String handle : handles){
+            webDriver.switchTo().window(handle);
+        }
         Assert.assertTrue(payment.setValidateMerchantName());
         Thread.sleep(3000);
     }
@@ -209,5 +212,3 @@ public class PaymentMethodStepDef {
     }
 
 }
-
-//        webDriver.switchTo().window(String.valueOf(WindowType.TAB));

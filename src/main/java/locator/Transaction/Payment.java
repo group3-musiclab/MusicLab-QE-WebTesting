@@ -19,7 +19,7 @@ public class Payment {
     @FindBy(xpath = "//button[@class='btn bg-[#3A2BE8] mt-4 disabled:border-slate-200 disabled:cursor-not-alloweds']")
     private WebElement btnContiPayment;
 
-    @FindBy(xpath = "//div[@class='merchant-name']")
+    @FindBy(xpath = "//div[@class='header-amount']")
     private WebElement validateMerchantName;
 
     @FindBy(xpath = "//img[@alt='GoPay']")
