@@ -29,9 +29,13 @@ public class PaymentMethodStepDef {
 
     @Then("Student click button Continue Payment")
     public void clickBtnContinuePayment() throws InterruptedException {
+        Set<String> handles = webDriver.getWindowHandles();
         Payment payment = new Payment(webDriver);
         payment.setBtnContiPayment();
         Thread.sleep(3000);
+        for(String handle : handles){
+            webDriver.switchTo().window(handle);
+        }
     }
 
     @And("Validate Payment Page")
@@ -194,6 +198,13 @@ public class PaymentMethodStepDef {
     public void clickBtnTransactionSuccess() throws InterruptedException {
         Payment payment = new Payment(webDriver);
         payment.setBtnTransactionSuccess();
+        Thread.sleep(3000);
+    }
+
+    @And("Validate New Schedule Student")
+    public void validateNewScheduleStudent() throws InterruptedException {
+        Payment payment = new Payment(webDriver);
+        Assert.assertTrue(payment.setValidateNewSchedule());
         Thread.sleep(3000);
     }
 

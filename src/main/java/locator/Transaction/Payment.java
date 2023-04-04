@@ -82,8 +82,9 @@ public class Payment {
     @FindBy(xpath = "//button[@class='btn btn-success']")
     private WebElement btnTransactionSuccess;
 
-    @FindBy(xpath = "//tr[15]/td[.='pending']")
+    @FindBy(xpath = "//button[@id='btn-kembali']")
     private WebElement validateNewSchedule;
+
 
     public void setBtnContiPayment(){
         btnContiPayment.click();
