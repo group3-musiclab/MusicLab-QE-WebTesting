@@ -79,12 +79,13 @@ public class PaymentMethodStepDef {
     }
 
     // DEBIT/CREDIT CARD METHOD
-    @Then("Choose Debit/Credit Card Method")
+    @Then("Choose Debit or Credit Card Method")
     public void chooseDebitCreditCard() throws InterruptedException {
         Payment payment = new Payment(webDriver);
         payment.setDebitCreditMethod();
         Thread.sleep(3000);
     }
+
 
     // SHOPEEPAY METHOD
     @Then("Choose ShopeePay Method")
@@ -210,5 +211,4 @@ public class PaymentMethodStepDef {
         Assert.assertTrue(payment.setValidateNewSchedule());
         Thread.sleep(3000);
     }
-
 }

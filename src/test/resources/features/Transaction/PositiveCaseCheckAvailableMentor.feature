@@ -14,7 +14,7 @@ Feature: [Positive Case] Check Schedule Mentors
     And Validate Name Course page
     Then Click button beli kursus
     And Validate Total Biaya course
-    Then Student set date course 20042030
+    Then Student set date course 20042123
     And Student set pilih hari "Friday"
     Then Student click button check available
     And Validate Pop-up message Schedule Mentor
