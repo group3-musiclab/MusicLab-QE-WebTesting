@@ -4,6 +4,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import locator.EditProfileMentor;
 import locator.EditProfileStudent;
 import locator.Login;
 import org.junit.Assert;
@@ -88,6 +89,12 @@ public class EditProfileStudentSteps {
         Thread.sleep(5000);
         editProfileStudent.setConfirmPass(cp);
         Thread.sleep(5000);
+    }
+    @And("Student input photo in profile photo")
+    public void mentorInputPhotoCertificate() throws InterruptedException {
+        EditProfileMentor editProfileMentor = new EditProfileMentor(webDriver);
+        editProfileMentor.setFotoCertificateMentor();
+        Thread.sleep(4000);
     }
 
     @Then("click Update Password student button")

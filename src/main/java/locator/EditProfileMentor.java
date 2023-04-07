@@ -25,10 +25,12 @@ public class EditProfileMentor {
     }
     @FindBy(id = "input-file")
     private WebElement photoMentor;
+    public static final String DIR = System.getProperty("user.dir");
+    public static final String fotoMentors =DIR + "\\Photo\\fotoCertificate.jpg";
     public void setPhotoMentor(){
-        driver.get("https://images.app.goo.gl/YzaGdcBAykupcFWA6");
-        driver.findElement(By.id("file-upload")).sendKeys("input-file.jpg");
+        photoMentor.sendKeys(fotoMentors);
     }
+
     @FindBy(xpath = "//input[@class='input input-bordered w-10/12 lg:w-9/12 bg-bg-input border-slate-300 text-black font-semibold font-poppins bg-white']")
     private WebElement nameMentor;
     public void setNameMentor(String nmm){
@@ -132,10 +134,11 @@ public class EditProfileMentor {
     @FindBy(xpath = "//input[@class='file-input h-10 w-10/12 lg:w-full lg:max-w-xs flex justify-center bg-white mx-auto mt-10 border-none']")
     private WebElement fotoCertificateMentor;
     public void setFotoCertificateMentor(){
-        driver.get("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmV0vVZrV9eaczVDxsTuVwhf3dyM0Va29nnQ&usqp=CAU");
-        driver.findElement(By.id("file-upload")).sendKeys("//input[@class='file-input h-10 w-10/12 lg:w-full lg:max-w-xs flex justify-center bg-white mx-auto mt-10 border-none'].jpg");
+        fotoCertificateMentor.sendKeys(fotoCertificateMentors);
     }
-
+    public static final String DIRE = System.getProperty("user.dir");
+    public static final String fotoCertificateMentors =DIRE + "\\Photo\\download.jpg";
+    // https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmV0vVZrV9eaczVDxsTuVwhf3dyM0Va29nnQ&usqp=CAU
     @FindBy(xpath = "//button[@id='btn-uploadsertifikat']")
     private WebElement btnSubmitCertificateMentor;
     public void VrfyClickUpdateCertificateMentor(){
@@ -184,6 +187,17 @@ public class EditProfileMentor {
     private WebElement btnSureDeleteMentor;
     public void vrfyClickSureDeleteMentor(){
         btnSureDeleteMentor.click();
+    }
+
+    @FindBy(xpath = "//div[@class='swal2-html-container']")
+    private WebElement validatePopUpMessage;
+    public String setValidatePopUpMessage(){
+        return validatePopUpMessage.getText();
+    }
+    @FindBy(xpath = "//button[@class='swal2-confirm swal2-styled swal2-default-outline']")
+    private WebElement clickOKPopUpMessage;
+    public void setClickOKPopUpMessage(){
+        clickOKPopUpMessage.click();
     }
 
 }

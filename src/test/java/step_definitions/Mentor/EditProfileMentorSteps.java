@@ -105,17 +105,18 @@ public class EditProfileMentorSteps {
     }
 
     @When("Mentor input type certificate {string} and certificate name {string}")
-    public void mentorInputTypeCertificateCertificateNameAndCertificatePhoto(String nctm, String tctm) throws InterruptedException {
+    public void mentorInputTypeCertificateCertificateNameAndCertificatePhoto(String tctm, String nctm) throws InterruptedException {
         EditProfileMentor editProfileMentor = new EditProfileMentor(webDriver);
-        editProfileMentor.setNameCertificateMentor(nctm);
-        Thread.sleep(3000);
         editProfileMentor.setTypeCertificateMentor(tctm);
-        Thread.sleep(3000);
+        Thread.sleep(4000);
+        editProfileMentor.setNameCertificateMentor(nctm);
+        Thread.sleep(4000);
     }
     @And("Mentor input photo in certificate photo")
-    public void mentorInputPhotoCertificate(){
+    public void mentorInputPhotoCertificate() throws InterruptedException {
         EditProfileMentor editProfileMentor = new EditProfileMentor(webDriver);
         editProfileMentor.setFotoCertificateMentor();
+        Thread.sleep(4000);
     }
 
     @Then("Click Update Certificate Mentor button")
@@ -159,6 +160,20 @@ public class EditProfileMentorSteps {
         Assert.assertTrue(editProfileMentor.setValidateSuccessInstrumentPass());
         Thread.sleep(4000);
         editProfileMentor.setValidateSuccessInstrumentPass2();
+        Thread.sleep(4000);
+    }
+    @And("validate Pop Up notification text {string}")
+    public void validatePopUpNotification(String popUpMessage) throws InterruptedException {
+        EditProfileMentor editProfileMentor = new EditProfileMentor(webDriver);
+        Assert.assertEquals(popUpMessage, editProfileMentor.setValidatePopUpMessage());
+        Thread.sleep(4000);
+        editProfileMentor.setClickOKPopUpMessage();
+        Thread.sleep(4000);
+    }
+    @And("validate Pop Up notification")
+    public void validatePopUpNotificationError() throws InterruptedException {
+        EditProfileMentor editProfileMentor = new EditProfileMentor(webDriver);
+        editProfileMentor.setClickOKPopUpMessage();
         Thread.sleep(4000);
     }
     @And("Click delete mentor profile")
