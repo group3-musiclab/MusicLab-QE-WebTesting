@@ -1,5 +1,6 @@
 package locator.Transaction;
 
+import locator.Login;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,7 +13,7 @@ public class CheckScheduleMentors {
 
     public CheckScheduleMentors(WebDriver driver){
         PageFactory.initElements(driver, this);
-        Register.driver = driver;
+        Login.driver = driver;
     }
 
     @FindBy(xpath = "//button[@id='btn-findmentor']")

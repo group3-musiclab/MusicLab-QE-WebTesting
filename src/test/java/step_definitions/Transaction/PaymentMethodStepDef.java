@@ -158,7 +158,11 @@ public class PaymentMethodStepDef {
 
     @And("Validate Transaksi Sukses")
     public void validateTransactionBcaKlikSuccess() throws InterruptedException {
+        Set<String> handles = webDriver.getWindowHandles();
         Payment payment = new Payment(webDriver);
+        for(String handle : handles){
+            webDriver.switchTo().window(handle);
+        }
         Assert.assertTrue(payment.setValidateTransactionSuccess());
         Thread.sleep(3000);
         webDriver.close();

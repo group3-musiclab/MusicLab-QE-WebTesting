@@ -7,6 +7,8 @@ import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import step_definitions.Hooks;
 
+import java.util.Set;
+
 public class UlasanStepDef {
 
     private final WebDriver webDriver;
@@ -31,7 +33,11 @@ public class UlasanStepDef {
 
     @And("Validate history belajar page")
     public void validatePageHistoryBelajar() throws InterruptedException {
+        Set<String> handles = webDriver.getWindowHandles();
         Ulasan ulasan = new Ulasan(webDriver);
+        for(String handle : handles){
+            webDriver.switchTo().window(handle);
+        }
         Assert.assertTrue(ulasan.setValidateHistoryBelajar());
         webDriver.navigate().refresh();
         Thread.sleep(3000);

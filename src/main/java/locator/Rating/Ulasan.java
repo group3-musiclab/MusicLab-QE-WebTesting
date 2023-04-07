@@ -1,5 +1,6 @@
 package locator.Rating;
 
+import locator.Login;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,7 +12,7 @@ public class Ulasan {
 
     public Ulasan(WebDriver driver){
         PageFactory.initElements(driver, this);
-        Register.driver = driver;
+        Login.driver = driver;
     }
 
     @FindBy(xpath = "//a[.='Profile']")

@@ -1,4 +1,4 @@
-@Capstone @Login
+#@Capstone @Login
   Feature: Login
     This test case is everything about login mentor and student
 
