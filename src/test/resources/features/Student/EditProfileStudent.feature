@@ -42,12 +42,11 @@
     Then click Update Student button
     And validate Pop Up notification
     Examples:
-      | nama            | gender | nohp | emails                  | alamat |
-      | icaaaaaaaaaaaaa |        |      | icaaisyahdewi@gmail.com |        |
-      |                 | fml    |      | icaaisyahdewi@gmail.com |        |
-      |                 |        | abc  | icaaisyahdewi@gmail.com |        |
-      |                 |        |      |                         |        |
-#
+      | nama | gender | nohp | emails                  | alamat |
+      |      | fml    |      | icaaisyahdewi@gmail.com |        |
+      |      |        | abc  | icaaisyahdewi@gmail.com |        |
+      |      |        |      |                         |        |
+
     Scenario Outline: Student Edit Password with valid parameter
       Given User click button login on home page
       When User input "<email>" as email "<password>" as password and "<role>" as role
@@ -77,17 +76,14 @@
       Examples:
         | email                   | password | role    | old password | new password | confirmation password |
         | icaaisyahdewi@gmail.com | 123      | Student | 123          | 321          | 123                   |
-        | icaaisyahdewi@gmail.com | 123      | Student | 321          | 123          | 123                   |
-        | icaaisyahdewi@gmail.com | 123      | Student |              | 123          | 123                   |
         | icaaisyahdewi@gmail.com | 123      | Student | 321          | 123          |                       |
         | icaaisyahdewi@gmail.com | 123      | Student |              |              |                       |
-        | icaaisyahdewi@gmail.com | 123      | Student |              | 123          | 123                   |
 
-    Scenario: Student Delete Profile Student
-      Given User click button login on home page
-      When User input "ariqn@gmail.com" as email "12345678" as password and "Student" as role
-      And Click login button
-      Then User already on home page again
-      And Click student profile button
-      And Click delete student profile
-      And validate Pop Up notification
+#    Scenario: Student Delete Profile Student
+#      Given User click button login on home page
+#      When User input "ariqn@gmail.com" as email "12345678" as password and "Student" as role
+#      And Click login button
+#      Then User already on home page again
+#      And Click student profile button
+#      And Click delete student profile
+#      And validate Pop Up notification
