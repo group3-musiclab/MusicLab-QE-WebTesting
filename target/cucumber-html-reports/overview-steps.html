@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Project Name</td>
+        <td>1</td>
+      <td>07 Apr 2023, 09:24</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">step_definitions.Auth.LoginSteps.buttonLoginShouldDisabled()</td>
+              <td>2</td>
+              <td class="duration" data-value="51242950">0.051</td>
+              <td class="duration" data-value="51242950">0.071</td>
+              <td class="duration" data-value="102485900">0.102</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.LoginSteps.clickLoginButton()</td>
+              <td>6</td>
+              <td class="duration" data-value="2753233416">2.753</td>
+              <td class="duration" data-value="2753233416">4.109</td>
+              <td class="duration" data-value="16519400500">16.519</td>
+              <td class="failed">83.33%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.LoginSteps.popUpAboutErrorMessageShouldShowUp()</td>
+              <td>2</td>
+              <td class="duration" data-value="71528850">0.071</td>
+              <td class="duration" data-value="71528850">0.143</td>
+              <td class="duration" data-value="143057700">0.143</td>
+              <td class="failed">50.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.LoginSteps.userAlreadyOnHomePageAgain()</td>
+              <td>2</td>
+              <td class="duration" data-value="226977150">0.226</td>
+              <td class="duration" data-value="226977150">0.288</td>
+              <td class="duration" data-value="453954300">0.453</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.LoginSteps.userClickButtonLoginOnHomePage()</td>
+              <td>12</td>
+              <td class="duration" data-value="3168503316">3.168</td>
+              <td class="duration" data-value="3168503316">4.543</td>
+              <td class="duration" data-value="38022039800">38.022</td>
+              <td class="failed">91.67%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.LoginSteps.userInputAsEmailAsPasswordAndAsRole(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>6</td>
+              <td class="duration" data-value="4610128666">4.610</td>
+              <td class="duration" data-value="4610128666">11.980</td>
+              <td class="duration" data-value="27660772000">27.660</td>
+              <td class="failed">83.33%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.RegisterSteps.buttonRegistrationShouldDisabled()</td>
+              <td>2</td>
+              <td class="duration" data-value="39971550">0.039</td>
+              <td class="duration" data-value="39971550">0.054</td>
+              <td class="duration" data-value="79943100">0.079</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.RegisterSteps.clickRegisterButton()</td>
+              <td>6</td>
+              <td class="duration" data-value="3078157016">3.078</td>
+              <td class="duration" data-value="3078157016">3.118</td>
+              <td class="duration" data-value="18468942100">18.468</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.RegisterSteps.clickRegisterOnLoginPage()</td>
+              <td>6</td>
+              <td class="duration" data-value="1377426783">1.377</td>
+              <td class="duration" data-value="1377426783">1.842</td>
+              <td class="duration" data-value="8264560700">8.264</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.RegisterSteps.popUpAboutErrorMessageRegistrationShouldShowUp()</td>
+              <td>2</td>
+              <td class="duration" data-value="39474950">0.039</td>
+              <td class="duration" data-value="39474950">0.057</td>
+              <td class="duration" data-value="78949900">0.078</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.RegisterSteps.userAlreadyOnLoginPage()</td>
+              <td>2</td>
+              <td class="duration" data-value="43971850">0.043</td>
+              <td class="duration" data-value="43971850">0.053</td>
+              <td class="duration" data-value="87943700">0.087</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.RegisterSteps.userInputAsNamaLengkapAsRoleAsEmailAndAsPassword(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>6</td>
+              <td class="duration" data-value="725303366">0.725</td>
+              <td class="duration" data-value="725303366">1.002</td>
+              <td class="duration" data-value="4351820200">4.351</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Class.UploadSteps.clickBasic()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Class.UploadSteps.clickKursusSaya()</td>
+              <td>2</td>
+              <td class="duration" data-value="499600">0.000</td>
+              <td class="duration" data-value="499600">0.000</td>
+              <td class="duration" data-value="999200">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Class.UploadSteps.clickProfile()</td>
+              <td>2</td>
+              <td class="duration" data-value="999300">0.000</td>
+              <td class="duration" data-value="999300">0.001</td>
+              <td class="duration" data-value="1998600">0.001</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Class.UploadSteps.clickTingkatanKhusus()</td>
+              <td>2</td>
+              <td class="duration" data-value="499500">0.000</td>
+              <td class="duration" data-value="499500">0.000</td>
+              <td class="duration" data-value="999000">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Class.UploadSteps.clickUploadKursusButton()</td>
+              <td>2</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Class.UploadSteps.clickUploadNewCourse()</td>
+              <td>2</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Class.UploadSteps.inputAsApaYangDipelajari(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Class.UploadSteps.inputAsDeskripsi(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Class.UploadSteps.inputAsDuration(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Class.UploadSteps.inputAsHargaKursus(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="500150">0.000</td>
+              <td class="duration" data-value="500150">0.001</td>
+              <td class="duration" data-value="1000300">0.001</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Class.UploadSteps.inputAsJudulKursus(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Class.UploadSteps.inputAsPrasyaratKhusus(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="499300">0.000</td>
+              <td class="duration" data-value="499300">0.000</td>
+              <td class="duration" data-value="998600">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Class.UploadSteps.inputAsUntukSiapaKursusIni(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Class.UploadSteps.validateSuccessNotification()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Class.UploadSteps.warningFailedUploadCourse()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Hooks.closeBrowser()</td>
+              <td>14</td>
+              <td class="duration" data-value="4198380592">4.198</td>
+              <td class="duration" data-value="4198380592">4.470</td>
+              <td class="duration" data-value="58777328300">58.777</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Hooks.openBrowser()</td>
+              <td>14</td>
+              <td class="duration" data-value="6736555335">6.736</td>
+              <td class="duration" data-value="6736555335">37.303</td>
+              <td class="duration" data-value="94311774700">1:34.311</td>
+              <td class="failed">92.86%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>29</td>
+            <td>109</td>
+            <td class="duration">2.452</td>
+            <td class="duration">1:34.311</td>
+            <td class="duration">4:27.328</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
