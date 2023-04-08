@@ -1,6 +1,0 @@
-step_definitions\Auth\LoginSteps.class
-step_definitions\Hooks.class
-step_definitions\RunCukesTest.class
-step_definitions\Class\UploadjadwalSteps.class
-step_definitions\Auth\RegisterSteps.class
-step_definitions\Class\UploadSteps.class
