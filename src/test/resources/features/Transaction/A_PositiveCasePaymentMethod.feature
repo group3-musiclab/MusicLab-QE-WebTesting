@@ -15,7 +15,7 @@ Feature: [Positive Case] Payment Method
     And Validate Name Course page
     Then Click button beli kursus
     And Validate Total Biaya course
-    Then Student set date course 10012025
+    Then Student set date course 10012026
     And Student set pilih hari "Wednesday"
     Then Student click button check available
     And Validate Pop-up message Schedule Mentor
@@ -37,7 +37,7 @@ Feature: [Positive Case] Payment Method
     And Validate Name Course page
     Then Click button beli kursus
     And Validate Total Biaya course
-    Then Student set date course 20062025
+    Then Student set date course 20062026
     And Student set pilih hari "Wednesday"
     Then Student click button check available
     And Validate Pop-up message Schedule Mentor
