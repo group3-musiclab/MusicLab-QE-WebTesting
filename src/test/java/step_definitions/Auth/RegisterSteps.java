@@ -44,7 +44,7 @@ public class RegisterSteps {
         register.setLogin2();
     }
 
-//    Existing
+    //    Existing
     @Then("Pop up about error message registration should show up")
     public void popUpAboutErrorMessageRegistrationShouldShowUp() {
         Register register = new Register(webDriver);
@@ -52,7 +52,7 @@ public class RegisterSteps {
         register.setError();
     }
 
-//    Blank
+    //    Blank
     @Then("Button registration should disabled")
     public void buttonRegistrationShouldDisabled() {
         Register register = new Register(webDriver);

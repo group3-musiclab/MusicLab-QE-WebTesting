@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="17" failures="0" name="step_definitions.RunCukesTest" time="360.835" errors="1" skipped="0">
+<testsuite tests="2" failures="0" name="step_definitions.RunCukesTest" time="27.698" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2023.1"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -60,117 +60,6 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Login with google account" name="Mentor login with google account" time="39.468"/>
-  <testcase classname="Login with google account" name="Student login with google account" time="38.445"/>
-  <testcase classname="Login with google account" name="Login with google account who have not registered" time="38.032"/>
-  <testcase classname="Login" name="User login with valid parameter #1" time="12.598"/>
-  <testcase classname="Login" name="User login with valid parameter #2" time="12.694"/>
-  <testcase classname="Login" name="User login with invalid parameter #1" time="12.356"/>
-  <testcase classname="Login" name="User login with invalid parameter #2" time="12.239"/>
-  <testcase classname="Login" name="User login with blank parameter #1" time="12.219"/>
-  <testcase classname="Login" name="User login with blank parameter #2" time="13.164"/>
-  <testcase classname="Registration" name="Registration with valid data #1" time="14.153"/>
-  <testcase classname="Registration" name="Registration with valid data #2" time="12.273"/>
-  <testcase classname="Registration" name="Registration with existing parameter #1" time="13.312"/>
-  <testcase classname="Registration" name="Registration with existing parameter #2" time="12.367"/>
-  <testcase classname="Registration" name="Registration with blank data parameter #1" time="13.235"/>
-  <testcase classname="Registration" name="Registration with blank data parameter #2" time="12.431"/>
-  <testcase classname="Create event on google calender" name="Create valid event" time="46.814">
-    <error message="element click intercepted: Element &lt;button id=&quot;btn-proceedgooglecalendar&quot; class=&quot;btn mt-5 bg-button text-white px-12&quot; disabled=&quot;&quot;&gt;...&lt;/button&gt; is not clickable at point (768, 439). Other element would receive the click: &lt;div&gt;...&lt;/div&gt;
-  (Session info: chrome=111.0.5563.148)
-Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bf7e0b43893cc75f9b18e8b96247a019, clickElement {id=85ca7c31-2756-4bd5-8426-150e0a22e21a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mafaa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:10479}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:10479/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (bf7e0b43893cc75f9b18e8b96247a019)] -&gt; id: btn-proceedgooglecalendar]
-Session ID: bf7e0b43893cc75f9b18e8b96247a019" type="org.openqa.selenium.ElementClickInterceptedException">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button id=&quot;btn-proceedgooglecalendar&quot; class=&quot;btn mt-5 bg-button text-white px-12&quot; disabled=&quot;&quot;&gt;...&lt;/button&gt; is not clickable at point (768, 439). Other element would receive the click: &lt;div&gt;...&lt;/div&gt;
-  (Session info: chrome=111.0.5563.148)
-Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bf7e0b43893cc75f9b18e8b96247a019, clickElement {id=85ca7c31-2756-4bd5-8426-150e0a22e21a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mafaa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:10479}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:10479/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (bf7e0b43893cc75f9b18e8b96247a019)] -&gt; id: btn-proceedgooglecalendar]
-Session ID: bf7e0b43893cc75f9b18e8b96247a019
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at jdk.internal.reflect.GeneratedMethodAccessor56.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at com.sun.proxy.$Proxy24.click(Unknown Source)
-	at locator.Event.setCalender(Event.java:53)
-	at step_definitions.Google_event.EventSteps.clickSeeEvent(EventSteps.java:47)
-	at ✽.Click see event(classpath:features//Google_event/CreateEvent.feature:16)
-</error>
-    <system-out>
-@Capstone @Event
-Scenario: Create valid event                                                                              &amp;#27;[90m# features//Google_event/CreateEvent.feature:5&amp;#27;[0m
-  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mUser click button login on home page&amp;#27;[0m                                                              &amp;#27;[90m# step_definitions.Auth.LoginSteps.userClickButtonLoginOnHomePage()&amp;#27;[0m
-  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mClick login google&amp;#27;[0m                                                                                  &amp;#27;[90m# step_definitions.Auth.GoogleSteps.clickLoginGoogle()&amp;#27;[0m
-  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mClick choose account&amp;#27;[0m                                                                               &amp;#27;[90m# step_definitions.Auth.GoogleSteps.clickChooseAccount()&amp;#27;[0m
-  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mProcess to login with google with &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;musiclabsejahtera@gmail.com&quot;&amp;#27;[0m&amp;#27;[32m as email &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;@Qwerty1234&quot;&amp;#27;[0m&amp;#27;[32m as password&amp;#27;[0m &amp;#27;[90m# step_definitions.Auth.GoogleSteps.processToLoginWithGoogleWithAsEmailAsPassword(java.lang.String,java.lang.String)&amp;#27;[0m
-  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mClick proceed to login button&amp;#27;[0m                                                                       &amp;#27;[90m# step_definitions.Auth.GoogleSteps.clickProceedToLoginButton()&amp;#27;[0m
-  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mUser already on home page again&amp;#27;[0m                                                                    &amp;#27;[90m# step_definitions.Auth.LoginSteps.userAlreadyOnHomePageAgain()&amp;#27;[0m
-  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mClick profile button&amp;#27;[0m                                                                                &amp;#27;[90m# step_definitions.Google_event.EventSteps.clickProfileButton()&amp;#27;[0m
-  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mMentor already on profile page and click jadwal saya button&amp;#27;[0m                                         &amp;#27;[90m# step_definitions.Google_event.EventSteps.mentorAlreadyOnProfilePageAndClickJadwalSayaButton()&amp;#27;[0m
-  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mAlready on history mengajar page&amp;#27;[0m                                                                   &amp;#27;[90m# step_definitions.Google_event.EventSteps.alreadyOnHistoryMengajarPage()&amp;#27;[0m
-  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mCLick create event button on create your event page&amp;#27;[0m                                                 &amp;#27;[90m# step_definitions.Google_event.EventSteps.clickCreateEventButton()&amp;#27;[0m
-  &amp;#27;[31mAnd &amp;#27;[0m&amp;#27;[31mClick see event&amp;#27;[0m                                                                                     &amp;#27;[90m# step_definitions.Google_event.EventSteps.clickSeeEvent()&amp;#27;[0m
-      &amp;#27;[31morg.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button id=&quot;btn-proceedgooglecalendar&quot; class=&quot;btn mt-5 bg-button text-white px-12&quot; disabled=&quot;&quot;&gt;...&lt;/button&gt; is not clickable at point (768, 439). Other element would receive the click: &lt;div&gt;...&lt;/div&gt;
-  (Session info: chrome=111.0.5563.148)
-Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bf7e0b43893cc75f9b18e8b96247a019, clickElement {id=85ca7c31-2756-4bd5-8426-150e0a22e21a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mafaa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:10479}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:10479/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (bf7e0b43893cc75f9b18e8b96247a019)] -&gt; id: btn-proceedgooglecalendar]
-Session ID: bf7e0b43893cc75f9b18e8b96247a019
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at jdk.internal.reflect.GeneratedMethodAccessor56.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at com.sun.proxy.$Proxy24.click(Unknown Source)
-	at locator.Event.setCalender(Event.java:53)
-	at step_definitions.Google_event.EventSteps.clickSeeEvent(EventSteps.java:47)
-	at ✽.Click see event(classpath:features//Google_event/CreateEvent.feature:16)
-&amp;#27;[0m
-  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mMentor already success create event on google calender&amp;#27;[0m                                             &amp;#27;[90m# step_definitions.Google_event.EventSteps.mentorAlreadySuccesCreateEventOnGoogleCalender()&amp;#27;[0m
-</system-out>
-    <system-err>Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 45476
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Apr 08, 2023 8:04:43 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 111, so returning the closest version found: 109
-</system-err>
-  </testcase>
-  <testcase classname="Create event on google calender" name="Create invalid event" time="45.035"/>
+  <testcase classname="Registration" name="Registration with blank data parameter #1" time="13.47"/>
+  <testcase classname="Registration" name="Registration with blank data parameter #2" time="14.228"/>
 </testsuite>
