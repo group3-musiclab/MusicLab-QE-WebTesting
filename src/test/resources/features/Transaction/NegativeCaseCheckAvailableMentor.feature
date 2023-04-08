@@ -2,9 +2,9 @@
 Feature: [Negative Case] Check Schedule Mentors
   This test case is everything about Negative Case Check Mentors Schedule
 
-  Scenario: Student Check Available Schedule Mentors with invalid date
+  Scenario: Student Check Available Schedule Mentors with invalid date (Before Current Date)
     Given User click button login on home page
-    When User input "mafa.alfa75@gmail.com" as email "321" as password and "Student" as role
+    When User input "bilal123@gmail.com" as email "1234567890" as password and "Student" as role
     And Click login button
     Then User already on home page again
     And Student click button Find Mentor
@@ -14,14 +14,15 @@ Feature: [Negative Case] Check Schedule Mentors
     And Validate Name Course page
     Then Click button beli kursus
     And Validate Total Biaya course
-    Then Student set date course 20042022
-    And Student set pilih hari "Friday"
+    Then Student set date course 20012023
+    And Student set pilih hari "Monday"
     Then Student click button check available
     And Validate Pop-up message Schedule Mentor
+    And Click Button Log Out
 
   Scenario: Student Check Available Schedule Mentors without input date
     Given User click button login on home page
-    When User input "mafa.alfa75@gmail.com" as email "321" as password and "Student" as role
+    When User input "bilal123@gmail.com" as email "1234567890" as password and "Student" as role
     And Click login button
     Then User already on home page again
     And Student click button Find Mentor
@@ -31,13 +32,14 @@ Feature: [Negative Case] Check Schedule Mentors
     And Validate Name Course page
     Then Click button beli kursus
     And Validate Total Biaya course
-    And Student set pilih hari "Friday"
+    And Student set pilih hari "Monday"
     Then Student click button check available
     And Validate Pop-up message Schedule Mentor
+    And Click Button Log Out
 
-  Scenario: Student Check Available Schedule Mentors without input hari
+  Scenario: Student Check Available Schedule Mentors without set pilih hari
     Given User click button login on home page
-    When User input "mafa.alfa75@gmail.com" as email "321" as password and "Student" as role
+    When User input "bilal123@gmail.com" as email "1234567890" as password and "Student" as role
     And Click login button
     Then User already on home page again
     And Student click button Find Mentor
@@ -50,10 +52,11 @@ Feature: [Negative Case] Check Schedule Mentors
     Then Student set date course 20042030
     Then Student click button check available
     And Validate Pop-up message Schedule Mentor
+    And Click Button Log Out
 
   Scenario: Student Check Available Schedule Mentors without input date and pilih hari
     Given User click button login on home page
-    When User input "mafa.alfa75@gmail.com" as email "321" as password and "Student" as role
+    When User input "bilal123@gmail.com" as email "1234567890" as password and "Student" as role
     And Click login button
     Then User already on home page again
     And Student click button Find Mentor
@@ -65,10 +68,11 @@ Feature: [Negative Case] Check Schedule Mentors
     And Validate Total Biaya course
     Then Student click button check available
     And Validate Pop-up message Schedule Mentor
+    And Click Button Log Out
 
   Scenario: Student Check Available Schedule Mentors with exiting Schedule
     Given User click button login on home page
-    When User input "mafa.alfa75@gmail.com" as email "321" as password and "Student" as role
+    When User input "bilal123@gmail.com" as email "1234567890" as password and "Student" as role
     And Click login button
     Then User already on home page again
     And Student click button Find Mentor
@@ -78,7 +82,8 @@ Feature: [Negative Case] Check Schedule Mentors
     And Validate Name Course page
     Then Click button beli kursus
     And Validate Total Biaya course
-    Then Student set date course 02062023
-    And Student set pilih hari "Friday"
+    Then Student set date course 02022023
+    And Student set pilih hari "Monday"
     Then Student click button check available
     And Validate Pop-up message Schedule Mentor
+    And Click Button Log Out

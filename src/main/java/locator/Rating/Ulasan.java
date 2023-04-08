@@ -67,6 +67,10 @@ public class Ulasan {
     private WebElement buttonPopupUlasanOk;
 
 
+    @FindBy(xpath = "//ul[@class='menu menu-horizontal px-1 lg:flex hidden']//a[.='Logout']")
+    private WebElement buttonLogout;
+
+
     public void setBtnProfile(){
         btnProfile.click();
     }
@@ -139,5 +143,9 @@ public class Ulasan {
 
     public void setButtonPopupUlasanOk(){
         buttonPopupUlasanOk.click();
+    }
+
+    public void setButtonLogout(){
+        buttonLogout.click();
     }
 }
