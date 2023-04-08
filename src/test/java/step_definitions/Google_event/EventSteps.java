@@ -31,6 +31,7 @@ public class EventSteps {
     public void alreadyOnHistoryMengajarPage() throws InterruptedException {
         Event event = new Event(webDriver);
         event.setCreate();
+        Thread.sleep(3000);
     }
 
     @And("CLick create event button on create your event page")

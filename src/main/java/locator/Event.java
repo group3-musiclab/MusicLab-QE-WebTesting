@@ -19,7 +19,7 @@ public class Event {
     @FindBy(id = "btn-jadwalsaya")
     private WebElement jadwal;
 
-    @FindBy(id = "btn-createEvents")
+    @FindBy(xpath = "//tbody[1]/tr[1]//button[@id='btn-createEvents']")
     private WebElement create;
 
     @FindBy(id = "btn-submitbutton")

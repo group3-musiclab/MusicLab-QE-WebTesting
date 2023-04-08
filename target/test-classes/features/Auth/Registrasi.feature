@@ -9,9 +9,9 @@
     And Click register button
     Then User already on login page
     Examples:
-      | name            | role    | email                       | pass     |
-      | Alexander Paijo | Mentor  | alexpaijo300@gmail.com      | 12345678 |
-      | Emilia Lisander | Student | lisanderemilia100@gmail.com | 87654321 |
+      | name            | role    | email                     | pass     |
+      | Alexander Paijo | Mentor  | alexpaijo2@gmail.com      | 12345678 |
+      | Emilia Lisander | Student | lisanderemilia8@gmail.com | 87654321 |
 
     Scenario Outline: Registration with existing parameter
     Given User click button login on home page

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Project Name</td>
+        <td>1</td>
+      <td>08 Apr 2023, 08:06</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">step_definitions.Auth.GoogleSteps.clickChooseAccount()</td>
+              <td>5</td>
+              <td class="duration" data-value="3116745000">3.116</td>
+              <td class="duration" data-value="3116745000">3.127</td>
+              <td class="duration" data-value="15583725000">15.583</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.GoogleSteps.clickLoginGoogle()</td>
+              <td>5</td>
+              <td class="duration" data-value="43463580">0.043</td>
+              <td class="duration" data-value="43463580">0.047</td>
+              <td class="duration" data-value="217317900">0.217</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.GoogleSteps.clickProceedToLoginButton()</td>
+              <td>5</td>
+              <td class="duration" data-value="3040929480">3.040</td>
+              <td class="duration" data-value="3040929480">3.046</td>
+              <td class="duration" data-value="15204647400">15.204</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.GoogleSteps.popUpAboutErrorLoginShouldShowUp()</td>
+              <td>1</td>
+              <td class="duration" data-value="53336400">0.053</td>
+              <td class="duration" data-value="53336400">0.053</td>
+              <td class="duration" data-value="53336400">0.053</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.GoogleSteps.processToLoginWithGoogleWithAsEmailAsPassword(java.lang.String,java.lang.String)</td>
+              <td>5</td>
+              <td class="duration" data-value="22293366280">22.293</td>
+              <td class="duration" data-value="22293366280">22.328</td>
+              <td class="duration" data-value="111466831400">1:51.466</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.LoginSteps.buttonLoginShouldDisabled()</td>
+              <td>2</td>
+              <td class="duration" data-value="11560250">0.011</td>
+              <td class="duration" data-value="11560250">0.011</td>
+              <td class="duration" data-value="23120500">0.023</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.LoginSteps.clickLoginButton()</td>
+              <td>6</td>
+              <td class="duration" data-value="3040903166">3.040</td>
+              <td class="duration" data-value="3040903166">3.052</td>
+              <td class="duration" data-value="18245419000">18.245</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.LoginSteps.popUpAboutErrorMessageShouldShowUp()</td>
+              <td>2</td>
+              <td class="duration" data-value="55377300">0.055</td>
+              <td class="duration" data-value="55377300">0.056</td>
+              <td class="duration" data-value="110754600">0.110</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.LoginSteps.userAlreadyOnHomePageAgain()</td>
+              <td>6</td>
+              <td class="duration" data-value="57109783">0.057</td>
+              <td class="duration" data-value="57109783">0.065</td>
+              <td class="duration" data-value="342658700">0.342</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.LoginSteps.userClickButtonLoginOnHomePage()</td>
+              <td>17</td>
+              <td class="duration" data-value="3073074641">3.073</td>
+              <td class="duration" data-value="3073074641">3.097</td>
+              <td class="duration" data-value="52242268900">52.242</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.LoginSteps.userInputAsEmailAsPasswordAndAsRole(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>6</td>
+              <td class="duration" data-value="190526016">0.190</td>
+              <td class="duration" data-value="190526016">0.212</td>
+              <td class="duration" data-value="1143156100">1.143</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.RegisterSteps.buttonRegistrationShouldDisabled()</td>
+              <td>2</td>
+              <td class="duration" data-value="12628700">0.012</td>
+              <td class="duration" data-value="12628700">0.013</td>
+              <td class="duration" data-value="25257400">0.025</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.RegisterSteps.clickRegisterButton()</td>
+              <td>6</td>
+              <td class="duration" data-value="3040868566">3.040</td>
+              <td class="duration" data-value="3040868566">3.048</td>
+              <td class="duration" data-value="18245211400">18.245</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.RegisterSteps.clickRegisterOnLoginPage()</td>
+              <td>6</td>
+              <td class="duration" data-value="41140550">0.041</td>
+              <td class="duration" data-value="41140550">0.044</td>
+              <td class="duration" data-value="246843300">0.246</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.RegisterSteps.popUpAboutErrorMessageRegistrationShouldShowUp()</td>
+              <td>2</td>
+              <td class="duration" data-value="48861100">0.048</td>
+              <td class="duration" data-value="48861100">0.051</td>
+              <td class="duration" data-value="97722200">0.097</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.RegisterSteps.userAlreadyOnLoginPage()</td>
+              <td>2</td>
+              <td class="duration" data-value="54537950">0.054</td>
+              <td class="duration" data-value="54537950">0.055</td>
+              <td class="duration" data-value="109075900">0.109</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.RegisterSteps.userInputAsNamaLengkapAsRoleAsEmailAndAsPassword(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>6</td>
+              <td class="duration" data-value="264786250">0.264</td>
+              <td class="duration" data-value="264786250">0.282</td>
+              <td class="duration" data-value="1588717500">1.588</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Google_event.EventSteps.alreadyOnHistoryMengajarPage()</td>
+              <td>2</td>
+              <td class="duration" data-value="6183130050">6.183</td>
+              <td class="duration" data-value="6183130050">6.191</td>
+              <td class="duration" data-value="12366260100">12.366</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Google_event.EventSteps.clickCreateEventButton()</td>
+              <td>1</td>
+              <td class="duration" data-value="2036132700">2.036</td>
+              <td class="duration" data-value="2036132700">2.036</td>
+              <td class="duration" data-value="2036132700">2.036</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Google_event.EventSteps.clickProfileButton()</td>
+              <td>2</td>
+              <td class="duration" data-value="61795150">0.061</td>
+              <td class="duration" data-value="61795150">0.061</td>
+              <td class="duration" data-value="123590300">0.123</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Google_event.EventSteps.clickSeeEvent()</td>
+              <td>1</td>
+              <td class="duration" data-value="1095909900">1.095</td>
+              <td class="duration" data-value="1095909900">1.095</td>
+              <td class="duration" data-value="1095909900">1.095</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Google_event.EventSteps.mentorAlreadyOnProfilePageAndClickJadwalSayaButton()</td>
+              <td>2</td>
+              <td class="duration" data-value="57331800">0.057</td>
+              <td class="duration" data-value="57331800">0.059</td>
+              <td class="duration" data-value="114663600">0.114</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Google_event.EventSteps.mentorAlreadySuccesCreateEventOnGoogleCalender()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Google_event.EventSteps.seeEventButtonShouldDisabled()</td>
+              <td>1</td>
+              <td class="duration" data-value="19928900">0.019</td>
+              <td class="duration" data-value="19928900">0.019</td>
+              <td class="duration" data-value="19928900">0.019</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Hooks.closeBrowser()</td>
+              <td>17</td>
+              <td class="duration" data-value="3670320082">3.670</td>
+              <td class="duration" data-value="3670320082">3.697</td>
+              <td class="duration" data-value="62395441400">1:2.395</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Hooks.openBrowser()</td>
+              <td>17</td>
+              <td class="duration" data-value="2796780505">2.796</td>
+              <td class="duration" data-value="2796780505">4.004</td>
+              <td class="duration" data-value="47545268600">47.545</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>26</td>
+            <td>128</td>
+            <td class="duration">2.817</td>
+            <td class="duration">1:51.466</td>
+            <td class="duration">6:0.643</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
