@@ -21,7 +21,8 @@ public class UlasanStepDef {
     public void studentClickButtonProfile() throws InterruptedException {
         Ulasan ulasan = new Ulasan(webDriver);
         ulasan.setBtnProfile();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
+        webDriver.navigate().refresh();
     }
 
     @And("Student click button jadwal")
@@ -29,6 +30,13 @@ public class UlasanStepDef {
         Ulasan ulasan = new Ulasan(webDriver);
         ulasan.setBtnJadwal();
         Thread.sleep(1000);
+    }
+
+    @And("Validate history belajar page -Beri Ulasan")
+    public void validatePageHistoryBelajarBeriUlasan() throws InterruptedException {
+        Ulasan ulasan = new Ulasan(webDriver);
+        Assert.assertTrue(ulasan.setValidateHistoryBelajar());
+        Thread.sleep(3000);
     }
 
     @And("Validate history belajar page")
@@ -99,5 +107,12 @@ public class UlasanStepDef {
         Assert.assertTrue(ulasan.validatePopUpFailedUlasan());
         Thread.sleep(2000);
         ulasan.setButtonPopupUlasanOk();
+    }
+
+    @And("Click Button Log Out")
+    public void clickBtnLogout() throws InterruptedException{
+        Ulasan ulasan = new Ulasan(webDriver);
+        ulasan.setButtonLogout();
+        Thread.sleep(2000);
     }
 }

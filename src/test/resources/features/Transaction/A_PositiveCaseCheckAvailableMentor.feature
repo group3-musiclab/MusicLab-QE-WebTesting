@@ -4,7 +4,7 @@ Feature: [Positive Case] Check Schedule Mentors
 
   Scenario: Student Check Available Schedule Mentors
     Given User click button login on home page
-    When User input "mafa.alfa75@gmail.com" as email "321" as password and "Student" as role
+    When User input "bilal123@gmail.com" as email "1234567890" as password and "Student" as role
     And Click login button
     Then User already on home page again
     And Student click button Find Mentor
@@ -14,7 +14,8 @@ Feature: [Positive Case] Check Schedule Mentors
     And Validate Name Course page
     Then Click button beli kursus
     And Validate Total Biaya course
-    Then Student set date course 20042123
-    And Student set pilih hari "Friday"
+    Then Student set date course 20042025
+    And Student set pilih hari "Wednesday"
     Then Student click button check available
     And Validate Pop-up message Schedule Mentor
+    And Click Button Log Out

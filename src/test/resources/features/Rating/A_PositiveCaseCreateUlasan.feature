@@ -9,10 +9,11 @@ Feature: [Positive Case] Validation And Create Ulasan
     Then User already on home page again
     And Student click button profile
     And Student click button jadwal
-    And Validate history belajar page
+    And Validate history belajar page -Beri Ulasan
     And Click button next page
     Then Student click button beri ulasan
-    And Student input comments "Good Course for everyone"
+    And Student input comments "Good Course, Keren Pokoknya"
     And Student give ratings 5 stars
     Then Click submit ulasan
     And Validate Pop-up message success give ratings
+    And Click Button Log Out
