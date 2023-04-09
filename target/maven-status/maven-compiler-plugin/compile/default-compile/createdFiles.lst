@@ -1,0 +1,13 @@
+locator\Chat.class
+locator\Menu.class
+locator\EditProfileMentor.class
+locator\Transaction\CheckScheduleMentors.class
+locator\Register.class
+locator\Google.class
+locator\Rating\Ulasan.class
+locator\Event.class
+locator\Transaction\Payment.class
+locator\EditProfileStudent.class
+locator\UploadJadwal.class
+locator\UploadKursus.class
+locator\Login.class

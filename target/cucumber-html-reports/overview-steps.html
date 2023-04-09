@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Project Name</td>
+        <td>1</td>
+      <td>09 Apr 2023, 08:49</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">step_definitions.Auth.GoogleSteps.clickChooseAccount()</td>
+              <td>5</td>
+              <td class="duration" data-value="3111445420">3.111</td>
+              <td class="duration" data-value="3111445420">3.161</td>
+              <td class="duration" data-value="15557227100">15.557</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.GoogleSteps.clickLoginGoogle()</td>
+              <td>5</td>
+              <td class="duration" data-value="43669860">0.043</td>
+              <td class="duration" data-value="43669860">0.046</td>
+              <td class="duration" data-value="218349300">0.218</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.GoogleSteps.clickProceedToLoginButton()</td>
+              <td>5</td>
+              <td class="duration" data-value="2436398880">2.436</td>
+              <td class="duration" data-value="2436398880">3.066</td>
+              <td class="duration" data-value="12181994400">12.181</td>
+              <td class="failed">80.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.GoogleSteps.popUpAboutErrorLoginShouldShowUp()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.GoogleSteps.processToLoginWithGoogleWithAsEmailAsPassword(java.lang.String,java.lang.String)</td>
+              <td>5</td>
+              <td class="duration" data-value="18439277220">18.439</td>
+              <td class="duration" data-value="18439277220">22.322</td>
+              <td class="duration" data-value="92196386100">1:32.196</td>
+              <td class="failed">80.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.LoginSteps.buttonLoginShouldDisabled()</td>
+              <td>2</td>
+              <td class="duration" data-value="13213500">0.013</td>
+              <td class="duration" data-value="13213500">0.013</td>
+              <td class="duration" data-value="26427000">0.026</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.LoginSteps.clickLoginButton()</td>
+              <td>63</td>
+              <td class="duration" data-value="3041942565">3.041</td>
+              <td class="duration" data-value="3041942565">3.056</td>
+              <td class="duration" data-value="191642381600">3:11.642</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.LoginSteps.popUpAboutErrorMessageShouldShowUp()</td>
+              <td>2</td>
+              <td class="duration" data-value="52327350">0.052</td>
+              <td class="duration" data-value="52327350">0.052</td>
+              <td class="duration" data-value="104654700">0.104</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.LoginSteps.userAlreadyOnHomePageAgain()</td>
+              <td>63</td>
+              <td class="duration" data-value="54361546">0.054</td>
+              <td class="duration" data-value="54361546">0.065</td>
+              <td class="duration" data-value="3424777400">3.424</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.LoginSteps.userClickButtonLoginOnHomePage()</td>
+              <td>74</td>
+              <td class="duration" data-value="3072556495">3.072</td>
+              <td class="duration" data-value="3072556495">3.129</td>
+              <td class="duration" data-value="227369180700">3:47.369</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.LoginSteps.userInputAsEmailAsPasswordAndAsRole(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>63</td>
+              <td class="duration" data-value="173277152">0.173</td>
+              <td class="duration" data-value="173277152">0.193</td>
+              <td class="duration" data-value="10916460600">10.916</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.RegisterSteps.buttonRegistrationShouldDisabled()</td>
+              <td>2</td>
+              <td class="duration" data-value="14454250">0.014</td>
+              <td class="duration" data-value="14454250">0.014</td>
+              <td class="duration" data-value="28908500">0.028</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.RegisterSteps.clickRegisterButton()</td>
+              <td>6</td>
+              <td class="duration" data-value="3039151033">3.039</td>
+              <td class="duration" data-value="3039151033">3.044</td>
+              <td class="duration" data-value="18234906200">18.234</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.RegisterSteps.clickRegisterOnLoginPage()</td>
+              <td>6</td>
+              <td class="duration" data-value="39184900">0.039</td>
+              <td class="duration" data-value="39184900">0.040</td>
+              <td class="duration" data-value="235109400">0.235</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.RegisterSteps.popUpAboutErrorMessageRegistrationShouldShowUp()</td>
+              <td>2</td>
+              <td class="duration" data-value="42654800">0.042</td>
+              <td class="duration" data-value="42654800">0.043</td>
+              <td class="duration" data-value="85309600">0.085</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.RegisterSteps.userAlreadyOnLoginPage()</td>
+              <td>2</td>
+              <td class="duration" data-value="50849500">0.050</td>
+              <td class="duration" data-value="50849500">0.052</td>
+              <td class="duration" data-value="101699000">0.101</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Auth.RegisterSteps.userInputAsNamaLengkapAsRoleAsEmailAndAsPassword(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>6</td>
+              <td class="duration" data-value="266034500">0.266</td>
+              <td class="duration" data-value="266034500">0.297</td>
+              <td class="duration" data-value="1596207000">1.596</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Chat.ChatToTeacherStepDef.studentChooseAndClickOneOfRegisteredTeacher()</td>
+              <td>5</td>
+              <td class="duration" data-value="72022760">0.072</td>
+              <td class="duration" data-value="72022760">0.075</td>
+              <td class="duration" data-value="360113800">0.360</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Chat.ChatToTeacherStepDef.studentClickButton()</td>
+              <td>5</td>
+              <td class="duration" data-value="41794900">0.041</td>
+              <td class="duration" data-value="41794900">0.050</td>
+              <td class="duration" data-value="208974500">0.208</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Chat.ChatToTeacherStepDef.studentClickSendButton()</td>
+              <td>4</td>
+              <td class="duration" data-value="33833025">0.033</td>
+              <td class="duration" data-value="33833025">0.035</td>
+              <td class="duration" data-value="135332100">0.135</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Chat.ChatToTeacherStepDef.studentInputText(java.lang.String)</td>
+              <td>5</td>
+              <td class="duration" data-value="2088042780">2.088</td>
+              <td class="duration" data-value="2088042780">2.116</td>
+              <td class="duration" data-value="10440213900">10.440</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Chat.ChatToTeacherStepDef.studentPressButtonOnKeyboard()</td>
+              <td>1</td>
+              <td class="duration" data-value="40382700">0.040</td>
+              <td class="duration" data-value="40382700">0.040</td>
+              <td class="duration" data-value="40382700">0.040</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Chat.ChatToTeacherStepDef.userClickButton()</td>
+              <td>5</td>
+              <td class="duration" data-value="3061587660">3.061</td>
+              <td class="duration" data-value="3061587660">3.066</td>
+              <td class="duration" data-value="15307938300">15.307</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Chat.ChatToTeacherStepDef.validateSentMessages()</td>
+              <td>5</td>
+              <td class="duration" data-value="2026268480">2.026</td>
+              <td class="duration" data-value="2026268480">2.031</td>
+              <td class="duration" data-value="10131342400">10.131</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Google_event.EventSteps.alreadyOnHistoryMengajarPage()</td>
+              <td>2</td>
+              <td class="duration" data-value="6182961250">6.182</td>
+              <td class="duration" data-value="6182961250">6.191</td>
+              <td class="duration" data-value="12365922500">12.365</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Google_event.EventSteps.clickCreateEventButton()</td>
+              <td>1</td>
+              <td class="duration" data-value="2035748100">2.035</td>
+              <td class="duration" data-value="2035748100">2.035</td>
+              <td class="duration" data-value="2035748100">2.035</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Google_event.EventSteps.clickProfileButton()</td>
+              <td>2</td>
+              <td class="duration" data-value="60797450">0.060</td>
+              <td class="duration" data-value="60797450">0.061</td>
+              <td class="duration" data-value="121594900">0.121</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Google_event.EventSteps.clickSeeEvent()</td>
+              <td>1</td>
+              <td class="duration" data-value="1088225900">1.088</td>
+              <td class="duration" data-value="1088225900">1.088</td>
+              <td class="duration" data-value="1088225900">1.088</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Google_event.EventSteps.mentorAlreadyOnProfilePageAndClickJadwalSayaButton()</td>
+              <td>2</td>
+              <td class="duration" data-value="58817000">0.058</td>
+              <td class="duration" data-value="58817000">0.062</td>
+              <td class="duration" data-value="117634000">0.117</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Google_event.EventSteps.mentorAlreadySuccesCreateEventOnGoogleCalender()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Google_event.EventSteps.seeEventButtonShouldDisabled()</td>
+              <td>1</td>
+              <td class="duration" data-value="16813100">0.016</td>
+              <td class="duration" data-value="16813100">0.016</td>
+              <td class="duration" data-value="16813100">0.016</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Hooks.closeBrowser()</td>
+              <td>74</td>
+              <td class="duration" data-value="3675637956">3.675</td>
+              <td class="duration" data-value="3675637956">3.750</td>
+              <td class="duration" data-value="271997208800">4:31.997</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Hooks.openBrowser()</td>
+              <td>74</td>
+              <td class="duration" data-value="2718308872">2.718</td>
+              <td class="duration" data-value="2718308872">5.793</td>
+              <td class="duration" data-value="201154856600">3:21.154</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Mentor.EditProfileMentorSteps.clickEditMentorProfile()</td>
+              <td>9</td>
+              <td class="duration" data-value="2836752788">2.836</td>
+              <td class="duration" data-value="2836752788">3.254</td>
+              <td class="duration" data-value="25530775100">25.530</td>
+              <td class="failed">88.89%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Mentor.EditProfileMentorSteps.clickUpdateCertificateMentorButton()</td>
+              <td>1</td>
+              <td class="duration" data-value="3039779800">3.039</td>
+              <td class="duration" data-value="3039779800">3.039</td>
+              <td class="duration" data-value="3039779800">3.039</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Mentor.EditProfileMentorSteps.clickUpdateGenreMentorButton()</td>
+              <td>1</td>
+              <td class="duration" data-value="30416700">0.030</td>
+              <td class="duration" data-value="30416700">0.030</td>
+              <td class="duration" data-value="30416700">0.030</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Mentor.EditProfileMentorSteps.clickUpdateInstrumentMentorButton()</td>
+              <td>1</td>
+              <td class="duration" data-value="3036248100">3.036</td>
+              <td class="duration" data-value="3036248100">3.036</td>
+              <td class="duration" data-value="3036248100">3.036</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Mentor.EditProfileMentorSteps.clickUpdateMentorButton()</td>
+              <td>1</td>
+              <td class="duration" data-value="32416200">0.032</td>
+              <td class="duration" data-value="32416200">0.032</td>
+              <td class="duration" data-value="32416200">0.032</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Mentor.EditProfileMentorSteps.clickUpdatePasswordMentorButton()</td>
+              <td>5</td>
+              <td class="duration" data-value="44070680">0.044</td>
+              <td class="duration" data-value="44070680">0.058</td>
+              <td class="duration" data-value="220353400">0.220</td>
+              <td class="failed">80.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Mentor.EditProfileMentorSteps.mentorInputGenre(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="3064168300">3.064</td>
+              <td class="duration" data-value="3064168300">3.064</td>
+              <td class="duration" data-value="3064168300">3.064</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Mentor.EditProfileMentorSteps.mentorInputImageProfileMentor()</td>
+              <td>1</td>
+              <td class="duration" data-value="30891000">0.030</td>
+              <td class="duration" data-value="30891000">0.030</td>
+              <td class="duration" data-value="30891000">0.030</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Mentor.EditProfileMentorSteps.mentorInputInstrumentTheyWantToTeach(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="7051112800">7.051</td>
+              <td class="duration" data-value="7051112800">7.051</td>
+              <td class="duration" data-value="7051112800">7.051</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Mentor.EditProfileMentorSteps.mentorInputNamaLengkapDeskripsiJenisKelaminNoHPEmailInstagramAccountLinkAndAlamat(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="15633288900">15.633</td>
+              <td class="duration" data-value="15633288900">15.633</td>
+              <td class="duration" data-value="15633288900">15.633</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Mentor.EditProfileMentorSteps.mentorInputOldPasswordNewPasswordAndConfirmationPassword(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>5</td>
+              <td class="duration" data-value="7343931180">7.343</td>
+              <td class="duration" data-value="7343931180">9.194</td>
+              <td class="duration" data-value="36719655900">36.719</td>
+              <td class="failed">80.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Mentor.EditProfileMentorSteps.mentorInputPhotoCertificate()</td>
+              <td>1</td>
+              <td class="duration" data-value="4035261100">4.035</td>
+              <td class="duration" data-value="4035261100">4.035</td>
+              <td class="duration" data-value="4035261100">4.035</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Mentor.EditProfileMentorSteps.mentorInputTypeCertificateCertificateNameAndCertificatePhoto(java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="8168498500">8.168</td>
+              <td class="duration" data-value="8168498500">8.168</td>
+              <td class="duration" data-value="8168498500">8.168</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Mentor.EditProfileMentorSteps.studentClickButtonProfile()</td>
+              <td>9</td>
+              <td class="duration" data-value="2730196477">2.730</td>
+              <td class="duration" data-value="2730196477">3.076</td>
+              <td class="duration" data-value="24571768300">24.571</td>
+              <td class="failed">88.89%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Mentor.EditProfileMentorSteps.validatePopUpNotification(java.lang.String)</td>
+              <td>15</td>
+              <td class="duration" data-value="2162459706">2.162</td>
+              <td class="duration" data-value="2162459706">8.090</td>
+              <td class="duration" data-value="32436895600">32.436</td>
+              <td class="failed">26.67%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Mentor.EditProfileMentorSteps.validatePopUpNotificationError()</td>
+              <td>6</td>
+              <td class="duration" data-value="4040969466">4.040</td>
+              <td class="duration" data-value="4040969466">4.045</td>
+              <td class="duration" data-value="24245816800">24.245</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.MenuPage.InsSteps.clickAsFilterInsrument(java.lang.String)</td>
+              <td>8</td>
+              <td class="duration" data-value="71690762">0.071</td>
+              <td class="duration" data-value="71690762">0.078</td>
+              <td class="duration" data-value="573526100">0.573</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.MenuPage.InsSteps.clickAsFilterRating(java.lang.String)</td>
+              <td>5</td>
+              <td class="duration" data-value="70496780">0.070</td>
+              <td class="duration" data-value="70496780">0.075</td>
+              <td class="duration" data-value="352483900">0.352</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.MenuPage.InsSteps.clickFindMentor()</td>
+              <td>18</td>
+              <td class="duration" data-value="3059338505">3.059</td>
+              <td class="duration" data-value="3059338505">3.072</td>
+              <td class="duration" data-value="55068093100">55.068</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.MenuPage.NextPrevSteps.clickButtonNext()</td>
+              <td>1</td>
+              <td class="duration" data-value="3046059700">3.046</td>
+              <td class="duration" data-value="3046059700">3.046</td>
+              <td class="duration" data-value="3046059700">3.046</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.MenuPage.NextPrevSteps.clickButtonPrev()</td>
+              <td>1</td>
+              <td class="duration" data-value="37566800">0.037</td>
+              <td class="duration" data-value="37566800">0.037</td>
+              <td class="duration" data-value="37566800">0.037</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.MenuPage.SearchSteps.inputMentorNameInSearchField(java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="52844625">0.052</td>
+              <td class="duration" data-value="52844625">0.061</td>
+              <td class="duration" data-value="211378500">0.211</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Rating.UlasanStepDef.clickBtnLogout()</td>
+              <td>13</td>
+              <td class="duration" data-value="1744643984">1.744</td>
+              <td class="duration" data-value="1744643984">2.079</td>
+              <td class="duration" data-value="22680371800">22.680</td>
+              <td class="failed">84.62%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Rating.UlasanStepDef.clickButtonNextPage()</td>
+              <td>4</td>
+              <td class="duration" data-value="2043795425">2.043</td>
+              <td class="duration" data-value="2043795425">2.048</td>
+              <td class="duration" data-value="8175181700">8.175</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Rating.UlasanStepDef.clickSubmitUlasan()</td>
+              <td>4</td>
+              <td class="duration" data-value="2275466925">2.275</td>
+              <td class="duration" data-value="2275466925">3.036</td>
+              <td class="duration" data-value="9101867700">9.101</td>
+              <td class="failed">75.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Rating.UlasanStepDef.giveStartRatingLima()</td>
+              <td>2</td>
+              <td class="duration" data-value="1526057200">1.526</td>
+              <td class="duration" data-value="1526057200">3.052</td>
+              <td class="duration" data-value="3052114400">3.052</td>
+              <td class="failed">50.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Rating.UlasanStepDef.studentClickButtonBeriUlasan()</td>
+              <td>5</td>
+              <td class="duration" data-value="2454115160">2.454</td>
+              <td class="duration" data-value="2454115160">3.069</td>
+              <td class="duration" data-value="12270575800">12.270</td>
+              <td class="failed">80.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Rating.UlasanStepDef.studentClickButtonJadwal()</td>
+              <td>5</td>
+              <td class="duration" data-value="4077660300">4.077</td>
+              <td class="duration" data-value="4077660300">4.080</td>
+              <td class="duration" data-value="20388301500">20.388</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Rating.UlasanStepDef.studentClickButtonProfile()</td>
+              <td>5</td>
+              <td class="duration" data-value="2173256980">2.173</td>
+              <td class="duration" data-value="2173256980">2.190</td>
+              <td class="duration" data-value="10866284900">10.866</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Rating.UlasanStepDef.userInputComments(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="198769533">0.198</td>
+              <td class="duration" data-value="198769533">0.436</td>
+              <td class="duration" data-value="596308600">0.596</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Rating.UlasanStepDef.validateCommentMaxLength()</td>
+              <td>1</td>
+              <td class="duration" data-value="3025702800">3.025</td>
+              <td class="duration" data-value="3025702800">3.025</td>
+              <td class="duration" data-value="3025702800">3.025</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Rating.UlasanStepDef.validateFailedGiveRatings()</td>
+              <td>2</td>
+              <td class="duration" data-value="1027346300">1.027</td>
+              <td class="duration" data-value="1027346300">2.054</td>
+              <td class="duration" data-value="2054692600">2.054</td>
+              <td class="failed">50.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Rating.UlasanStepDef.validatePageHistoryBelajar()</td>
+              <td>2</td>
+              <td class="duration" data-value="1577210450">1.577</td>
+              <td class="duration" data-value="1577210450">3.143</td>
+              <td class="duration" data-value="3154420900">3.154</td>
+              <td class="failed">50.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Rating.UlasanStepDef.validatePageHistoryBelajarBeriUlasan()</td>
+              <td>5</td>
+              <td class="duration" data-value="3022407320">3.022</td>
+              <td class="duration" data-value="3022407320">3.025</td>
+              <td class="duration" data-value="15112036600">15.112</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Rating.UlasanStepDef.validateSuccessGiveRatings()</td>
+              <td>2</td>
+              <td class="duration" data-value="2055596800">2.055</td>
+              <td class="duration" data-value="2055596800">2.060</td>
+              <td class="duration" data-value="4111193600">4.111</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Student.EditProfileStudentSteps.clickEditStudentProfile()</td>
+              <td>12</td>
+              <td class="duration" data-value="3185147775">3.185</td>
+              <td class="duration" data-value="3185147775">3.268</td>
+              <td class="duration" data-value="38221773300">38.221</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Student.EditProfileStudentSteps.clickUpdatePasswordStudentButton()</td>
+              <td>5</td>
+              <td class="duration" data-value="4039307420">4.039</td>
+              <td class="duration" data-value="4039307420">4.045</td>
+              <td class="duration" data-value="20196537100">20.196</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Student.EditProfileStudentSteps.clickUpdateStudentButton()</td>
+              <td>7</td>
+              <td class="duration" data-value="2609551042">2.609</td>
+              <td class="duration" data-value="2609551042">3.050</td>
+              <td class="duration" data-value="18266857300">18.266</td>
+              <td class="failed">85.71%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Student.EditProfileStudentSteps.mentorInputPhotoCertificate()</td>
+              <td>1</td>
+              <td class="duration" data-value="10473800">0.010</td>
+              <td class="duration" data-value="10473800">0.010</td>
+              <td class="duration" data-value="10473800">0.010</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Student.EditProfileStudentSteps.studentClickButtonProfile()</td>
+              <td>12</td>
+              <td class="duration" data-value="3053571600">3.053</td>
+              <td class="duration" data-value="3053571600">3.057</td>
+              <td class="duration" data-value="36642859200">36.642</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Student.EditProfileStudentSteps.studentInputNamaLengkapJenisKelaminNoHPEmailAndAlamat(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>7</td>
+              <td class="duration" data-value="15392035528">15.392</td>
+              <td class="duration" data-value="15392035528">15.455</td>
+              <td class="duration" data-value="107744248700">1:47.744</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Student.EditProfileStudentSteps.studentInputOldPasswordNewPasswordAndConfirmationPassword(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>5</td>
+              <td class="duration" data-value="13204836360">13.204</td>
+              <td class="duration" data-value="13204836360">13.217</td>
+              <td class="duration" data-value="66024181800">1:6.024</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Transaction.CheckAvailabelMentorStepDef.clickButtonCheckAvail()</td>
+              <td>8</td>
+              <td class="duration" data-value="3040780137">3.040</td>
+              <td class="duration" data-value="3040780137">3.047</td>
+              <td class="duration" data-value="24326241100">24.326</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Transaction.CheckAvailabelMentorStepDef.studentChooseCourse()</td>
+              <td>8</td>
+              <td class="duration" data-value="3053773087">3.053</td>
+              <td class="duration" data-value="3053773087">3.060</td>
+              <td class="duration" data-value="24430184700">24.430</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Transaction.CheckAvailabelMentorStepDef.studentChooseMentors()</td>
+              <td>8</td>
+              <td class="duration" data-value="3201645800">3.201</td>
+              <td class="duration" data-value="3201645800">3.289</td>
+              <td class="duration" data-value="25613166400">25.613</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Transaction.CheckAvailabelMentorStepDef.studentClickBeliKursus()</td>
+              <td>8</td>
+              <td class="duration" data-value="3054195437">3.054</td>
+              <td class="duration" data-value="3054195437">3.058</td>
+              <td class="duration" data-value="24433563500">24.433</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Transaction.CheckAvailabelMentorStepDef.studentClickButtonFindMentor()</td>
+              <td>8</td>
+              <td class="duration" data-value="3059170137">3.059</td>
+              <td class="duration" data-value="3059170137">3.065</td>
+              <td class="duration" data-value="24473361100">24.473</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Transaction.CheckAvailabelMentorStepDef.studentPilihHariCourse(java.lang.String)</td>
+              <td>6</td>
+              <td class="duration" data-value="2081257466">2.081</td>
+              <td class="duration" data-value="2081257466">2.093</td>
+              <td class="duration" data-value="12487544800">12.487</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Transaction.CheckAvailabelMentorStepDef.studentSetDate(int)</td>
+              <td>6</td>
+              <td class="duration" data-value="2053542333">2.053</td>
+              <td class="duration" data-value="2053542333">2.062</td>
+              <td class="duration" data-value="12321254000">12.321</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Transaction.CheckAvailabelMentorStepDef.validateMentorProfilePage()</td>
+              <td>8</td>
+              <td class="duration" data-value="3037337912">3.037</td>
+              <td class="duration" data-value="3037337912">3.049</td>
+              <td class="duration" data-value="24298703300">24.298</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Transaction.CheckAvailabelMentorStepDef.validateNameCoursePage()</td>
+              <td>8</td>
+              <td class="duration" data-value="3023494125">3.023</td>
+              <td class="duration" data-value="3023494125">3.027</td>
+              <td class="duration" data-value="24187953000">24.187</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Transaction.CheckAvailabelMentorStepDef.validatePopupMentorIsAvail()</td>
+              <td>8</td>
+              <td class="duration" data-value="2053821637">2.053</td>
+              <td class="duration" data-value="2053821637">2.059</td>
+              <td class="duration" data-value="16430573100">16.430</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Transaction.CheckAvailabelMentorStepDef.validateTotalBiayaCourse()</td>
+              <td>8</td>
+              <td class="duration" data-value="3020170562">3.020</td>
+              <td class="duration" data-value="3020170562">3.025</td>
+              <td class="duration" data-value="24161364500">24.161</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Transaction.PaymentMethodStepDef.btnPayNow()</td>
+              <td>1</td>
+              <td class="duration" data-value="5037415600">5.037</td>
+              <td class="duration" data-value="5037415600">5.037</td>
+              <td class="duration" data-value="5037415600">5.037</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Transaction.PaymentMethodStepDef.chooseBcaKlik()</td>
+              <td>1</td>
+              <td class="duration" data-value="3061304300">3.061</td>
+              <td class="duration" data-value="3061304300">3.061</td>
+              <td class="duration" data-value="3061304300">3.061</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Transaction.PaymentMethodStepDef.clickBtnBayar()</td>
+              <td>1</td>
+              <td class="duration" data-value="3130679400">3.130</td>
+              <td class="duration" data-value="3130679400">3.130</td>
+              <td class="duration" data-value="3130679400">3.130</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Transaction.PaymentMethodStepDef.clickBtnContinuePayment()</td>
+              <td>1</td>
+              <td class="duration" data-value="3043269700">3.043</td>
+              <td class="duration" data-value="3043269700">3.043</td>
+              <td class="duration" data-value="3043269700">3.043</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Transaction.PaymentMethodStepDef.clickBtnContinuePaymentWithoutChooseMethod()</td>
+              <td>1</td>
+              <td class="duration" data-value="3048948700">3.048</td>
+              <td class="duration" data-value="3048948700">3.048</td>
+              <td class="duration" data-value="3048948700">3.048</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Transaction.PaymentMethodStepDef.validateNewScheduleStudent()</td>
+              <td>2</td>
+              <td class="duration" data-value="1510254200">1.510</td>
+              <td class="duration" data-value="1510254200">3.020</td>
+              <td class="duration" data-value="3020508400">3.020</td>
+              <td class="failed">50.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Transaction.PaymentMethodStepDef.validateOrderId()</td>
+              <td>1</td>
+              <td class="duration" data-value="3023816500">3.023</td>
+              <td class="duration" data-value="3023816500">3.023</td>
+              <td class="duration" data-value="3023816500">3.023</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Transaction.PaymentMethodStepDef.validatePaymentPage()</td>
+              <td>1</td>
+              <td class="duration" data-value="5404242000">5.404</td>
+              <td class="duration" data-value="5404242000">5.404</td>
+              <td class="duration" data-value="5404242000">5.404</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Transaction.PaymentMethodStepDef.validateTransactionBcaKlikSuccess()</td>
+              <td>1</td>
+              <td class="duration" data-value="3128415400">3.128</td>
+              <td class="duration" data-value="3128415400">3.128</td>
+              <td class="duration" data-value="3128415400">3.128</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">step_definitions.Transaction.PaymentMethodStepDef.vldtTrsctionNumber()</td>
+              <td>1</td>
+              <td class="duration" data-value="3027217600">3.027</td>
+              <td class="duration" data-value="3027217600">3.027</td>
+              <td class="duration" data-value="3027217600">3.027</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>96</td>
+            <td>793</td>
+            <td class="duration">2.547</td>
+            <td class="duration">4:31.997</td>
+            <td class="duration">33:40.364</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

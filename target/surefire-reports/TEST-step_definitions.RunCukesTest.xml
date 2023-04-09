@@ -1,0 +1,1367 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="74" failures="3" name="step_definitions.RunCukesTest" time="2,020.881" errors="12" skipped="0">
+  <properties>
+    <property name="idea.version" value="2023.1"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="15.0.2+7-27"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-15.0.2\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\Alterra\Automation\Maven\MusicLab-QE-WebTesting\MusicLab-QE-WebTesting"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="ID"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\Alterra\Automation\Maven\MusicLab-QE-WebTesting\MusicLab-QE-WebTesting"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="15.0.2+7-27"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\mafaa\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.1\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.1\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-15.0.2\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python311\Scripts\;C:\Python311\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet\;C:\Program Files\apache-maven-3.8.7\bin;C:\Program Files\Java\jdk1.8.0_351\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Users\mafaa\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.1\bin;;C:\Users\mafaa\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\mafaa\AppData\Local\Programs\oh-my-posh\bin;C:\Users\mafaa\AppData\Roaming\npm;."/>
+    <property name="jansi.passthrough" value="true"/>
+    <property name="maven.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.1\plugins\maven\lib\maven3/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="59.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\mafaa"/>
+    <property name="user.timezone" value="Asia/Jakarta"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="15"/>
+    <property name="user.name" value="mafaa"/>
+    <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.1\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.1\plugins\maven\lib\maven3\boot\plexus-classworlds.license"/>
+    <property name="java.vm.specification.version" value="15"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2023.1 test"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-15.0.2"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="15.0.2"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.1\plugins\maven\lib\maven3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2021-01-19"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="Login with google account" name="Mentor login with google account" time="41.319"/>
+  <testcase classname="Login with google account" name="Student login with google account" time="37.973"/>
+  <testcase classname="Login with google account" name="Login with google account who have not registered" time="16.512">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;identifierId&apos;]&quot;}
+  (Session info: chrome=111.0.5563.148)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [28a0f469efb3a52d8f4aac1a42012ea8, findElement {using=xpath, value=//input[@id=&apos;identifierId&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mafaa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:12851}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:12851/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 28a0f469efb3a52d8f4aac1a42012ea8" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;identifierId&apos;]&quot;}
+  (Session info: chrome=111.0.5563.148)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [28a0f469efb3a52d8f4aac1a42012ea8, findElement {using=xpath, value=//input[@id=&apos;identifierId&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mafaa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:12851}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:12851/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 28a0f469efb3a52d8f4aac1a42012ea8
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy24.sendKeys(Unknown Source)
+	at locator.Google.logGoogle(Google.java:59)
+	at step_definitions.Auth.GoogleSteps.processToLoginWithGoogleWithAsEmailAsPassword(GoogleSteps.java:34)
+	at ✽.Process to login with google with &quot;studentmusiclab2@gmail.com&quot; as email &quot;@Qwerty1234&quot; as password(classpath:features//Auth/GoogleLogin.feature:25)
+</error>
+    <system-out>
+@Capstone @Google
+Scenario: Login with google account who have not registered                                              &amp;#27;[90m# features//Auth/GoogleLogin.feature:21&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mUser click button login on home page&amp;#27;[0m                                                             &amp;#27;[90m# step_definitions.Auth.LoginSteps.userClickButtonLoginOnHomePage()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mClick login google&amp;#27;[0m                                                                                 &amp;#27;[90m# step_definitions.Auth.GoogleSteps.clickLoginGoogle()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mClick choose account&amp;#27;[0m                                                                              &amp;#27;[90m# step_definitions.Auth.GoogleSteps.clickChooseAccount()&amp;#27;[0m
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mProcess to login with google with &amp;#27;[0m&amp;#27;[31m&amp;#27;[1m&quot;studentmusiclab2@gmail.com&quot;&amp;#27;[0m&amp;#27;[31m as email &amp;#27;[0m&amp;#27;[31m&amp;#27;[1m&quot;@Qwerty1234&quot;&amp;#27;[0m&amp;#27;[31m as password&amp;#27;[0m &amp;#27;[90m# step_definitions.Auth.GoogleSteps.processToLoginWithGoogleWithAsEmailAsPassword(java.lang.String,java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;identifierId&apos;]&quot;}
+  (Session info: chrome=111.0.5563.148)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [28a0f469efb3a52d8f4aac1a42012ea8, findElement {using=xpath, value=//input[@id=&apos;identifierId&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mafaa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:12851}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:12851/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 28a0f469efb3a52d8f4aac1a42012ea8
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy24.sendKeys(Unknown Source)
+	at locator.Google.logGoogle(Google.java:59)
+	at step_definitions.Auth.GoogleSteps.processToLoginWithGoogleWithAsEmailAsPassword(GoogleSteps.java:34)
+	at ✽.Process to login with google with &quot;studentmusiclab2@gmail.com&quot; as email &quot;@Qwerty1234&quot; as password(classpath:features//Auth/GoogleLogin.feature:25)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mClick proceed to login button&amp;#27;[0m                                                                      &amp;#27;[90m# step_definitions.Auth.GoogleSteps.clickProceedToLoginButton()&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mPop up about error login should show up&amp;#27;[0m                                                           &amp;#27;[90m# step_definitions.Auth.GoogleSteps.popUpAboutErrorLoginShouldShowUp()&amp;#27;[0m
+</system-out>
+    <system-err>Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 33263
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Apr 09, 2023 8:16:49 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 111, so returning the closest version found: 109
+</system-err>
+  </testcase>
+  <testcase classname="Login" name="User login with valid parameter #1" time="13.284"/>
+  <testcase classname="Login" name="User login with valid parameter #2" time="12.803"/>
+  <testcase classname="Login" name="User login with invalid parameter #1" time="12.619"/>
+  <testcase classname="Login" name="User login with invalid parameter #2" time="12.325"/>
+  <testcase classname="Login" name="User login with blank parameter #1" time="12.146"/>
+  <testcase classname="Login" name="User login with blank parameter #2" time="12.237"/>
+  <testcase classname="Registration" name="Registration with valid data #1" time="12.589"/>
+  <testcase classname="Registration" name="Registration with valid data #2" time="12.338"/>
+  <testcase classname="Registration" name="Registration with existing parameter #1" time="13.214"/>
+  <testcase classname="Registration" name="Registration with existing parameter #2" time="12.174"/>
+  <testcase classname="Registration" name="Registration with blank data parameter #1" time="15.599"/>
+  <testcase classname="Registration" name="Registration with blank data parameter #2" time="12.245"/>
+  <testcase classname="Sending Message to Teacher #2" name="User login with valid parameter" time="19.571"/>
+  <testcase classname="Sending Message to Teacher #2" name="students start sending messages to the teacher using number typing" time="19.986"/>
+  <testcase classname="Sending Message to Teacher #2" name="students start sending messages to the teacher using special character typing" time="19.744"/>
+  <testcase classname="Sending Message to Teacher #2" name="Students start sending messages to the teacher using a combination of alphabets, numbers, and special characters" time="20.32"/>
+  <testcase classname="Sending Message to Teacher #2" name="Students start sending messages to the teacher using keyboard enter button" time="19.509"/>
+  <testcase classname="Create event on google calender" name="Create valid event" time="48.355">
+    <error message="element click intercepted: Element &lt;button id=&quot;btn-proceedgooglecalendar&quot; class=&quot;btn mt-5 bg-button text-white px-12&quot; disabled=&quot;&quot;&gt;...&lt;/button&gt; is not clickable at point (768, 439). Other element would receive the click: &lt;div&gt;...&lt;/div&gt;
+  (Session info: chrome=111.0.5563.148)
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [618fb2e562275aebcf9ef39e7fb7e751, clickElement {id=ef974200-6fcd-4722-8f16-f315819d7044}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mafaa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:14223}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:14223/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (618fb2e562275aebcf9ef39e7fb7e751)] -&gt; id: btn-proceedgooglecalendar]
+Session ID: 618fb2e562275aebcf9ef39e7fb7e751" type="org.openqa.selenium.ElementClickInterceptedException">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button id=&quot;btn-proceedgooglecalendar&quot; class=&quot;btn mt-5 bg-button text-white px-12&quot; disabled=&quot;&quot;&gt;...&lt;/button&gt; is not clickable at point (768, 439). Other element would receive the click: &lt;div&gt;...&lt;/div&gt;
+  (Session info: chrome=111.0.5563.148)
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [618fb2e562275aebcf9ef39e7fb7e751, clickElement {id=ef974200-6fcd-4722-8f16-f315819d7044}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mafaa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:14223}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:14223/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (618fb2e562275aebcf9ef39e7fb7e751)] -&gt; id: btn-proceedgooglecalendar]
+Session ID: 618fb2e562275aebcf9ef39e7fb7e751
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at jdk.internal.reflect.GeneratedMethodAccessor58.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy24.click(Unknown Source)
+	at locator.Event.setCalender(Event.java:53)
+	at step_definitions.Google_event.EventSteps.clickSeeEvent(EventSteps.java:47)
+	at ✽.Click see event(classpath:features//Google_event/CreateEvent.feature:16)
+</error>
+    <system-out>
+@Capstone @Event
+Scenario: Create valid event                                                                              &amp;#27;[90m# features//Google_event/CreateEvent.feature:5&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mUser click button login on home page&amp;#27;[0m                                                              &amp;#27;[90m# step_definitions.Auth.LoginSteps.userClickButtonLoginOnHomePage()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mClick login google&amp;#27;[0m                                                                                  &amp;#27;[90m# step_definitions.Auth.GoogleSteps.clickLoginGoogle()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mClick choose account&amp;#27;[0m                                                                               &amp;#27;[90m# step_definitions.Auth.GoogleSteps.clickChooseAccount()&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mProcess to login with google with &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;musiclabsejahtera@gmail.com&quot;&amp;#27;[0m&amp;#27;[32m as email &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;@Qwerty1234&quot;&amp;#27;[0m&amp;#27;[32m as password&amp;#27;[0m &amp;#27;[90m# step_definitions.Auth.GoogleSteps.processToLoginWithGoogleWithAsEmailAsPassword(java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mClick proceed to login button&amp;#27;[0m                                                                       &amp;#27;[90m# step_definitions.Auth.GoogleSteps.clickProceedToLoginButton()&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mUser already on home page again&amp;#27;[0m                                                                    &amp;#27;[90m# step_definitions.Auth.LoginSteps.userAlreadyOnHomePageAgain()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mClick profile button&amp;#27;[0m                                                                                &amp;#27;[90m# step_definitions.Google_event.EventSteps.clickProfileButton()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mMentor already on profile page and click jadwal saya button&amp;#27;[0m                                         &amp;#27;[90m# step_definitions.Google_event.EventSteps.mentorAlreadyOnProfilePageAndClickJadwalSayaButton()&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mAlready on history mengajar page&amp;#27;[0m                                                                   &amp;#27;[90m# step_definitions.Google_event.EventSteps.alreadyOnHistoryMengajarPage()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mCLick create event button on create your event page&amp;#27;[0m                                                 &amp;#27;[90m# step_definitions.Google_event.EventSteps.clickCreateEventButton()&amp;#27;[0m
+  &amp;#27;[31mAnd &amp;#27;[0m&amp;#27;[31mClick see event&amp;#27;[0m                                                                                     &amp;#27;[90m# step_definitions.Google_event.EventSteps.clickSeeEvent()&amp;#27;[0m
+      &amp;#27;[31morg.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button id=&quot;btn-proceedgooglecalendar&quot; class=&quot;btn mt-5 bg-button text-white px-12&quot; disabled=&quot;&quot;&gt;...&lt;/button&gt; is not clickable at point (768, 439). Other element would receive the click: &lt;div&gt;...&lt;/div&gt;
+  (Session info: chrome=111.0.5563.148)
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [618fb2e562275aebcf9ef39e7fb7e751, clickElement {id=ef974200-6fcd-4722-8f16-f315819d7044}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mafaa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:14223}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:14223/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (618fb2e562275aebcf9ef39e7fb7e751)] -&gt; id: btn-proceedgooglecalendar]
+Session ID: 618fb2e562275aebcf9ef39e7fb7e751
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at jdk.internal.reflect.GeneratedMethodAccessor58.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy24.click(Unknown Source)
+	at locator.Event.setCalender(Event.java:53)
+	at step_definitions.Google_event.EventSteps.clickSeeEvent(EventSteps.java:47)
+	at ✽.Click see event(classpath:features//Google_event/CreateEvent.feature:16)
+&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mMentor already success create event on google calender&amp;#27;[0m                                             &amp;#27;[90m# step_definitions.Google_event.EventSteps.mentorAlreadySuccesCreateEventOnGoogleCalender()&amp;#27;[0m
+</system-out>
+    <system-err>Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 16577
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Apr 09, 2023 8:21:18 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 111, so returning the closest version found: 109
+</system-err>
+  </testcase>
+  <testcase classname="Create event on google calender" name="Create invalid event" time="43.94"/>
+  <testcase classname="Edit Profile Mentor" name="Mentor Edit Profile with all valid parameter" time="34.362">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;swal2-html-container&apos;]&quot;}
+  (Session info: chrome=111.0.5563.148)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [25c18885ddb73ce1f73807124fd4d328, findElement {using=xpath, value=//div[@class=&apos;swal2-html-container&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mafaa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:14547}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:14547/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 25c18885ddb73ce1f73807124fd4d328" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;swal2-html-container&apos;]&quot;}
+  (Session info: chrome=111.0.5563.148)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [25c18885ddb73ce1f73807124fd4d328, findElement {using=xpath, value=//div[@class=&apos;swal2-html-container&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mafaa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:14547}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:14547/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 25c18885ddb73ce1f73807124fd4d328
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy24.getText(Unknown Source)
+	at locator.EditProfileMentor.setValidatePopUpMessage(EditProfileMentor.java:195)
+	at step_definitions.Mentor.EditProfileMentorSteps.validatePopUpNotification(EditProfileMentorSteps.java:168)
+	at ✽.validate Pop Up notification text &quot;success update mentor profile&quot;(classpath:features//Mentor/EditProfileMentor.feature:14)
+</error>
+    <system-out>
+@Capstone @EditProfileStudent
+Scenario Outline: Mentor Edit Profile with all valid parameter                                                                                                                                                                  &amp;#27;[90m# features//Mentor/EditProfileMentor.feature:17&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mUser click button login on home page&amp;#27;[0m                                                                                                                                                                                    &amp;#27;[90m# step_definitions.Auth.LoginSteps.userClickButtonLoginOnHomePage()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mUser input &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;icadr@gmail.com&quot;&amp;#27;[0m&amp;#27;[32m as email &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;123&quot;&amp;#27;[0m&amp;#27;[32m as password and &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Mentor&quot;&amp;#27;[0m&amp;#27;[32m as role&amp;#27;[0m                                                                                                                                             &amp;#27;[90m# step_definitions.Auth.LoginSteps.userInputAsEmailAsPasswordAndAsRole(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mClick login button&amp;#27;[0m                                                                                                                                                                                                        &amp;#27;[90m# step_definitions.Auth.LoginSteps.clickLoginButton()&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mUser already on home page again&amp;#27;[0m                                                                                                                                                                                          &amp;#27;[90m# step_definitions.Auth.LoginSteps.userAlreadyOnHomePageAgain()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mClick mentor profile button&amp;#27;[0m                                                                                                                                                                                               &amp;#27;[90m# step_definitions.Mentor.EditProfileMentorSteps.studentClickButtonProfile()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mClick edit mentor profile&amp;#27;[0m                                                                                                                                                                                                 &amp;#27;[90m# step_definitions.Mentor.EditProfileMentorSteps.clickEditMentorProfile()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mMentor input nama lengkap &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Aisyah Dewi Rulyadi&quot;&amp;#27;[0m&amp;#27;[32m deskripsi &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;specialized in any kind of Piano&quot;&amp;#27;[0m&amp;#27;[32m jenis kelamin &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Female&quot;&amp;#27;[0m&amp;#27;[32m no. HP &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;08190828103&quot;&amp;#27;[0m&amp;#27;[32m email &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;icadr@gmail.com&quot;&amp;#27;[0m&amp;#27;[32m instagram account link &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;@icaadr&quot;&amp;#27;[0m&amp;#27;[32mand alamat &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;komp. BPPT&quot;&amp;#27;[0m &amp;#27;[90m# step_definitions.Mentor.EditProfileMentorSteps.mentorInputNamaLengkapDeskripsiJenisKelaminNoHPEmailInstagramAccountLinkAndAlamat(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mMentor input image profile mentor&amp;#27;[0m                                                                                                                                                                                         &amp;#27;[90m# step_definitions.Mentor.EditProfileMentorSteps.mentorInputImageProfileMentor()&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mclick Update Mentor button&amp;#27;[0m                                                                                                                                                                                               &amp;#27;[90m# step_definitions.Mentor.EditProfileMentorSteps.clickUpdateMentorButton()&amp;#27;[0m
+  &amp;#27;[31mAnd &amp;#27;[0m&amp;#27;[31mvalidate Pop Up notification text &amp;#27;[0m&amp;#27;[31m&amp;#27;[1m&quot;success update mentor profile&quot;&amp;#27;[0m                                                                                                                                                         &amp;#27;[90m# step_definitions.Mentor.EditProfileMentorSteps.validatePopUpNotification(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;swal2-html-container&apos;]&quot;}
+  (Session info: chrome=111.0.5563.148)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [25c18885ddb73ce1f73807124fd4d328, findElement {using=xpath, value=//div[@class=&apos;swal2-html-container&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mafaa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:14547}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:14547/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 25c18885ddb73ce1f73807124fd4d328
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy24.getText(Unknown Source)
+	at locator.EditProfileMentor.setValidatePopUpMessage(EditProfileMentor.java:195)
+	at step_definitions.Mentor.EditProfileMentorSteps.validatePopUpNotification(EditProfileMentorSteps.java:168)
+	at ✽.validate Pop Up notification text &quot;success update mentor profile&quot;(classpath:features//Mentor/EditProfileMentor.feature:14)
+&amp;#27;[0m
+</system-out>
+    <system-err>Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 22532
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Apr 09, 2023 8:22:50 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 111, so returning the closest version found: 109
+</system-err>
+  </testcase>
+  <testcase classname="Edit Profile Mentor" name="Mentor Edit Password with valid parameter #1" time="28.383">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;swal2-html-container&apos;]&quot;}
+  (Session info: chrome=111.0.5563.148)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [02873ca5fbf5f350a746b61cf2e8c7b4, findElement {using=xpath, value=//div[@class=&apos;swal2-html-container&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mafaa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:14671}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:14671/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 02873ca5fbf5f350a746b61cf2e8c7b4" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;swal2-html-container&apos;]&quot;}
+  (Session info: chrome=111.0.5563.148)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [02873ca5fbf5f350a746b61cf2e8c7b4, findElement {using=xpath, value=//div[@class=&apos;swal2-html-container&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mafaa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:14671}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:14671/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 02873ca5fbf5f350a746b61cf2e8c7b4
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy24.getText(Unknown Source)
+	at locator.EditProfileMentor.setValidatePopUpMessage(EditProfileMentor.java:195)
+	at step_definitions.Mentor.EditProfileMentorSteps.validatePopUpNotification(EditProfileMentorSteps.java:168)
+	at ✽.validate Pop Up notification text &quot;success update mentor password&quot;(classpath:features//Mentor/EditProfileMentor.feature:28)
+</error>
+    <system-out>
+@Capstone @EditProfileStudent
+Scenario Outline: Mentor Edit Password with valid parameter                               &amp;#27;[90m# features//Mentor/EditProfileMentor.feature:31&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mUser click button login on home page&amp;#27;[0m                                              &amp;#27;[90m# step_definitions.Auth.LoginSteps.userClickButtonLoginOnHomePage()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mUser input &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;icadr@gmail.com&quot;&amp;#27;[0m&amp;#27;[32m as email &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;123&quot;&amp;#27;[0m&amp;#27;[32m as password and &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Mentor&quot;&amp;#27;[0m&amp;#27;[32m as role&amp;#27;[0m       &amp;#27;[90m# step_definitions.Auth.LoginSteps.userInputAsEmailAsPasswordAndAsRole(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mClick login button&amp;#27;[0m                                                                  &amp;#27;[90m# step_definitions.Auth.LoginSteps.clickLoginButton()&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mUser already on home page again&amp;#27;[0m                                                    &amp;#27;[90m# step_definitions.Auth.LoginSteps.userAlreadyOnHomePageAgain()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mClick mentor profile button&amp;#27;[0m                                                         &amp;#27;[90m# step_definitions.Mentor.EditProfileMentorSteps.studentClickButtonProfile()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mClick edit mentor profile&amp;#27;[0m                                                           &amp;#27;[90m# step_definitions.Mentor.EditProfileMentorSteps.clickEditMentorProfile()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mMentor input old password &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;123&quot;&amp;#27;[0m&amp;#27;[32m new password &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;321&quot;&amp;#27;[0m&amp;#27;[32m and confirmation password &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;321&quot;&amp;#27;[0m &amp;#27;[90m# step_definitions.Mentor.EditProfileMentorSteps.mentorInputOldPasswordNewPasswordAndConfirmationPassword(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mclick Update Password mentor button&amp;#27;[0m                                                &amp;#27;[90m# step_definitions.Mentor.EditProfileMentorSteps.clickUpdatePasswordMentorButton()&amp;#27;[0m
+  &amp;#27;[31mAnd &amp;#27;[0m&amp;#27;[31mvalidate Pop Up notification text &amp;#27;[0m&amp;#27;[31m&amp;#27;[1m&quot;success update mentor password&quot;&amp;#27;[0m                  &amp;#27;[90m# step_definitions.Mentor.EditProfileMentorSteps.validatePopUpNotification(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;swal2-html-container&apos;]&quot;}
+  (Session info: chrome=111.0.5563.148)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [02873ca5fbf5f350a746b61cf2e8c7b4, findElement {using=xpath, value=//div[@class=&apos;swal2-html-container&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mafaa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:14671}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:14671/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 02873ca5fbf5f350a746b61cf2e8c7b4
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy24.getText(Unknown Source)
+	at locator.EditProfileMentor.setValidatePopUpMessage(EditProfileMentor.java:195)
+	at step_definitions.Mentor.EditProfileMentorSteps.validatePopUpNotification(EditProfileMentorSteps.java:168)
+	at ✽.validate Pop Up notification text &quot;success update mentor password&quot;(classpath:features//Mentor/EditProfileMentor.feature:28)
+&amp;#27;[0m
+</system-out>
+    <system-err>Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 15909
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Apr 09, 2023 8:23:25 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 111, so returning the closest version found: 109
+</system-err>
+  </testcase>
+  <testcase classname="Edit Profile Mentor" name="Mentor Edit Password with valid parameter #2" time="15.042">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[.=&apos;Profile&apos;]&quot;}
+  (Session info: chrome=111.0.5563.148)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e988737d95b58784b156d56e83b48496, findElement {using=xpath, value=//a[.=&apos;Profile&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mafaa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:14760}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:14760/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e988737d95b58784b156d56e83b48496" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[.=&apos;Profile&apos;]&quot;}
+  (Session info: chrome=111.0.5563.148)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e988737d95b58784b156d56e83b48496, findElement {using=xpath, value=//a[.=&apos;Profile&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mafaa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:14760}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:14760/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e988737d95b58784b156d56e83b48496
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy24.click(Unknown Source)
+	at locator.EditProfileMentor.vrfyClickMentorProfilePage(EditProfileMentor.java:19)
+	at step_definitions.Mentor.EditProfileMentorSteps.studentClickButtonProfile(EditProfileMentorSteps.java:24)
+	at ✽.Click mentor profile button(classpath:features//Mentor/EditProfileMentor.feature:24)
+</error>
+    <system-out>
+@Capstone @EditProfileStudent
+Scenario Outline: Mentor Edit Password with valid parameter                               &amp;#27;[90m# features//Mentor/EditProfileMentor.feature:32&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mUser click button login on home page&amp;#27;[0m                                              &amp;#27;[90m# step_definitions.Auth.LoginSteps.userClickButtonLoginOnHomePage()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mUser input &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;icadr@gmail.com&quot;&amp;#27;[0m&amp;#27;[32m as email &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;321&quot;&amp;#27;[0m&amp;#27;[32m as password and &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Mentor&quot;&amp;#27;[0m&amp;#27;[32m as role&amp;#27;[0m       &amp;#27;[90m# step_definitions.Auth.LoginSteps.userInputAsEmailAsPasswordAndAsRole(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mClick login button&amp;#27;[0m                                                                  &amp;#27;[90m# step_definitions.Auth.LoginSteps.clickLoginButton()&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mUser already on home page again&amp;#27;[0m                                                    &amp;#27;[90m# step_definitions.Auth.LoginSteps.userAlreadyOnHomePageAgain()&amp;#27;[0m
+  &amp;#27;[31mAnd &amp;#27;[0m&amp;#27;[31mClick mentor profile button&amp;#27;[0m                                                         &amp;#27;[90m# step_definitions.Mentor.EditProfileMentorSteps.studentClickButtonProfile()&amp;#27;[0m
+      &amp;#27;[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[.=&apos;Profile&apos;]&quot;}
+  (Session info: chrome=111.0.5563.148)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e988737d95b58784b156d56e83b48496, findElement {using=xpath, value=//a[.=&apos;Profile&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mafaa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:14760}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:14760/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e988737d95b58784b156d56e83b48496
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy24.click(Unknown Source)
+	at locator.EditProfileMentor.vrfyClickMentorProfilePage(EditProfileMentor.java:19)
+	at step_definitions.Mentor.EditProfileMentorSteps.studentClickButtonProfile(EditProfileMentorSteps.java:24)
+	at ✽.Click mentor profile button(classpath:features//Mentor/EditProfileMentor.feature:24)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mClick edit mentor profile&amp;#27;[0m                                                           &amp;#27;[90m# step_definitions.Mentor.EditProfileMentorSteps.clickEditMentorProfile()&amp;#27;[0m
+  &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mMentor input old password &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;321&quot;&amp;#27;[0m&amp;#27;[36m new password &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;123&quot;&amp;#27;[0m&amp;#27;[36m and confirmation password &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;123&quot;&amp;#27;[0m &amp;#27;[90m# step_definitions.Mentor.EditProfileMentorSteps.mentorInputOldPasswordNewPasswordAndConfirmationPassword(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mclick Update Password mentor button&amp;#27;[0m                                                &amp;#27;[90m# step_definitions.Mentor.EditProfileMentorSteps.clickUpdatePasswordMentorButton()&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mvalidate Pop Up notification text &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;success update mentor password&quot;&amp;#27;[0m                  &amp;#27;[90m# step_definitions.Mentor.EditProfileMentorSteps.validatePopUpNotification(java.lang.String)&amp;#27;[0m
+</system-out>
+    <system-err>Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 41876
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Apr 09, 2023 8:23:53 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 111, so returning the closest version found: 109
+</system-err>
+  </testcase>
+  <testcase classname="Edit Profile Mentor" name="Mentor Edit Password with invalid parameter #1" time="28.572">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;swal2-html-container&apos;]&quot;}
+  (Session info: chrome=111.0.5563.148)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0a1a869ccc86606d321b67ec6fb0219b, findElement {using=xpath, value=//div[@class=&apos;swal2-html-container&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mafaa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:14833}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:14833/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0a1a869ccc86606d321b67ec6fb0219b" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;swal2-html-container&apos;]&quot;}
+  (Session info: chrome=111.0.5563.148)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0a1a869ccc86606d321b67ec6fb0219b, findElement {using=xpath, value=//div[@class=&apos;swal2-html-container&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mafaa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:14833}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:14833/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0a1a869ccc86606d321b67ec6fb0219b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy24.getText(Unknown Source)
+	at locator.EditProfileMentor.setValidatePopUpMessage(EditProfileMentor.java:195)
+	at step_definitions.Mentor.EditProfileMentorSteps.validatePopUpNotification(EditProfileMentorSteps.java:168)
+	at ✽.validate Pop Up notification text &quot;new password and confirmation password is not equal&quot;(classpath:features//Mentor/EditProfileMentor.feature:44)
+</error>
+    <system-out>
+@Capstone @EditProfileStudent
+Scenario Outline: Mentor Edit Password with invalid parameter                                 &amp;#27;[90m# features//Mentor/EditProfileMentor.feature:47&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mUser click button login on home page&amp;#27;[0m                                                  &amp;#27;[90m# step_definitions.Auth.LoginSteps.userClickButtonLoginOnHomePage()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mUser input &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;icadr@gmail.com&quot;&amp;#27;[0m&amp;#27;[32m as email &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;123&quot;&amp;#27;[0m&amp;#27;[32m as password and &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Mentor&quot;&amp;#27;[0m&amp;#27;[32m as role&amp;#27;[0m           &amp;#27;[90m# step_definitions.Auth.LoginSteps.userInputAsEmailAsPasswordAndAsRole(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mClick login button&amp;#27;[0m                                                                      &amp;#27;[90m# step_definitions.Auth.LoginSteps.clickLoginButton()&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mUser already on home page again&amp;#27;[0m                                                        &amp;#27;[90m# step_definitions.Auth.LoginSteps.userAlreadyOnHomePageAgain()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mClick mentor profile button&amp;#27;[0m                                                             &amp;#27;[90m# step_definitions.Mentor.EditProfileMentorSteps.studentClickButtonProfile()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mClick edit mentor profile&amp;#27;[0m                                                               &amp;#27;[90m# step_definitions.Mentor.EditProfileMentorSteps.clickEditMentorProfile()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mMentor input old password &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;123&quot;&amp;#27;[0m&amp;#27;[32m new password &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;321&quot;&amp;#27;[0m&amp;#27;[32m and confirmation password &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;322&quot;&amp;#27;[0m     &amp;#27;[90m# step_definitions.Mentor.EditProfileMentorSteps.mentorInputOldPasswordNewPasswordAndConfirmationPassword(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mclick Update Password mentor button&amp;#27;[0m                                                    &amp;#27;[90m# step_definitions.Mentor.EditProfileMentorSteps.clickUpdatePasswordMentorButton()&amp;#27;[0m
+  &amp;#27;[31mAnd &amp;#27;[0m&amp;#27;[31mvalidate Pop Up notification text &amp;#27;[0m&amp;#27;[31m&amp;#27;[1m&quot;new password and confirmation password is not equal&quot;&amp;#27;[0m &amp;#27;[90m# step_definitions.Mentor.EditProfileMentorSteps.validatePopUpNotification(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;swal2-html-container&apos;]&quot;}
+  (Session info: chrome=111.0.5563.148)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0a1a869ccc86606d321b67ec6fb0219b, findElement {using=xpath, value=//div[@class=&apos;swal2-html-container&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mafaa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:14833}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:14833/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0a1a869ccc86606d321b67ec6fb0219b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy24.getText(Unknown Source)
+	at locator.EditProfileMentor.setValidatePopUpMessage(EditProfileMentor.java:195)
+	at step_definitions.Mentor.EditProfileMentorSteps.validatePopUpNotification(EditProfileMentorSteps.java:168)
+	at ✽.validate Pop Up notification text &quot;new password and confirmation password is not equal&quot;(classpath:features//Mentor/EditProfileMentor.feature:44)
+&amp;#27;[0m
+</system-out>
+    <system-err>Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 35509
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Apr 09, 2023 8:24:08 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 111, so returning the closest version found: 109
+</system-err>
+  </testcase>
+  <testcase classname="Edit Profile Mentor" name="Mentor Edit Password with invalid parameter #2" time="27.734">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;swal2-html-container&apos;]&quot;}
+  (Session info: chrome=111.0.5563.148)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [70e9cd17d037c88a445edc805fd62f3e, findElement {using=xpath, value=//div[@class=&apos;swal2-html-container&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mafaa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:14928}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:14928/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 70e9cd17d037c88a445edc805fd62f3e" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;swal2-html-container&apos;]&quot;}
+  (Session info: chrome=111.0.5563.148)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [70e9cd17d037c88a445edc805fd62f3e, findElement {using=xpath, value=//div[@class=&apos;swal2-html-container&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mafaa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:14928}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:14928/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 70e9cd17d037c88a445edc805fd62f3e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy24.getText(Unknown Source)
+	at locator.EditProfileMentor.setValidatePopUpMessage(EditProfileMentor.java:195)
+	at step_definitions.Mentor.EditProfileMentorSteps.validatePopUpNotification(EditProfileMentorSteps.java:168)
+	at ✽.validate Pop Up notification text &quot;new password and confirmation password is not equal&quot;(classpath:features//Mentor/EditProfileMentor.feature:44)
+</error>
+    <system-out>
+@Capstone @EditProfileStudent
+Scenario Outline: Mentor Edit Password with invalid parameter                                 &amp;#27;[90m# features//Mentor/EditProfileMentor.feature:48&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mUser click button login on home page&amp;#27;[0m                                                  &amp;#27;[90m# step_definitions.Auth.LoginSteps.userClickButtonLoginOnHomePage()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mUser input &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;icadr@gmail.com&quot;&amp;#27;[0m&amp;#27;[32m as email &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;123&quot;&amp;#27;[0m&amp;#27;[32m as password and &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Mentor&quot;&amp;#27;[0m&amp;#27;[32m as role&amp;#27;[0m           &amp;#27;[90m# step_definitions.Auth.LoginSteps.userInputAsEmailAsPasswordAndAsRole(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mClick login button&amp;#27;[0m                                                                      &amp;#27;[90m# step_definitions.Auth.LoginSteps.clickLoginButton()&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mUser already on home page again&amp;#27;[0m                                                        &amp;#27;[90m# step_definitions.Auth.LoginSteps.userAlreadyOnHomePageAgain()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mClick mentor profile button&amp;#27;[0m                                                             &amp;#27;[90m# step_definitions.Mentor.EditProfileMentorSteps.studentClickButtonProfile()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mClick edit mentor profile&amp;#27;[0m                                                               &amp;#27;[90m# step_definitions.Mentor.EditProfileMentorSteps.clickEditMentorProfile()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mMentor input old password &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;321&quot;&amp;#27;[0m&amp;#27;[32m new password &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;123&quot;&amp;#27;[0m&amp;#27;[32m and confirmation password &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;321&quot;&amp;#27;[0m     &amp;#27;[90m# step_definitions.Mentor.EditProfileMentorSteps.mentorInputOldPasswordNewPasswordAndConfirmationPassword(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mclick Update Password mentor button&amp;#27;[0m                                                    &amp;#27;[90m# step_definitions.Mentor.EditProfileMentorSteps.clickUpdatePasswordMentorButton()&amp;#27;[0m
+  &amp;#27;[31mAnd &amp;#27;[0m&amp;#27;[31mvalidate Pop Up notification text &amp;#27;[0m&amp;#27;[31m&amp;#27;[1m&quot;new password and confirmation password is not equal&quot;&amp;#27;[0m &amp;#27;[90m# step_definitions.Mentor.EditProfileMentorSteps.validatePopUpNotification(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;swal2-html-container&apos;]&quot;}
+  (Session info: chrome=111.0.5563.148)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [70e9cd17d037c88a445edc805fd62f3e, findElement {using=xpath, value=//div[@class=&apos;swal2-html-container&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mafaa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:14928}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:14928/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 70e9cd17d037c88a445edc805fd62f3e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy24.getText(Unknown Source)
+	at locator.EditProfileMentor.setValidatePopUpMessage(EditProfileMentor.java:195)
+	at step_definitions.Mentor.EditProfileMentorSteps.validatePopUpNotification(EditProfileMentorSteps.java:168)
+	at ✽.validate Pop Up notification text &quot;new password and confirmation password is not equal&quot;(classpath:features//Mentor/EditProfileMentor.feature:44)
+&amp;#27;[0m
+</system-out>
+    <system-err>Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 15420
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Apr 09, 2023 8:24:37 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 111, so returning the closest version found: 109
+</system-err>
+  </testcase>
+  <testcase classname="Edit Profile Mentor" name="Mentor Edit Password with invalid parameter #3" time="28.985">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;swal2-html-container&apos;]&quot;}
+  (Session info: chrome=111.0.5563.148)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7e6c7a312827685ab9ab2626c07cdbd5, findElement {using=xpath, value=//div[@class=&apos;swal2-html-container&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mafaa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:1060}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:1060/devtool..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7e6c7a312827685ab9ab2626c07cdbd5" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;swal2-html-container&apos;]&quot;}
+  (Session info: chrome=111.0.5563.148)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7e6c7a312827685ab9ab2626c07cdbd5, findElement {using=xpath, value=//div[@class=&apos;swal2-html-container&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mafaa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:1060}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:1060/devtool..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7e6c7a312827685ab9ab2626c07cdbd5
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy24.getText(Unknown Source)
+	at locator.EditProfileMentor.setValidatePopUpMessage(EditProfileMentor.java:195)
+	at step_definitions.Mentor.EditProfileMentorSteps.validatePopUpNotification(EditProfileMentorSteps.java:168)
+	at ✽.validate Pop Up notification text &quot;old password, new password and confirmation password field cannot be empty&quot;(classpath:features//Mentor/EditProfileMentor.feature:44)
+</error>
+    <system-out>
+@Capstone @EditProfileStudent
+Scenario Outline: Mentor Edit Password with invalid parameter                                                        &amp;#27;[90m# features//Mentor/EditProfileMentor.feature:49&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mUser click button login on home page&amp;#27;[0m                                                                         &amp;#27;[90m# step_definitions.Auth.LoginSteps.userClickButtonLoginOnHomePage()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mUser input &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;icadr@gmail.com&quot;&amp;#27;[0m&amp;#27;[32m as email &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;123&quot;&amp;#27;[0m&amp;#27;[32m as password and &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Mentor&quot;&amp;#27;[0m&amp;#27;[32m as role&amp;#27;[0m                                  &amp;#27;[90m# step_definitions.Auth.LoginSteps.userInputAsEmailAsPasswordAndAsRole(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mClick login button&amp;#27;[0m                                                                                             &amp;#27;[90m# step_definitions.Auth.LoginSteps.clickLoginButton()&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mUser already on home page again&amp;#27;[0m                                                                               &amp;#27;[90m# step_definitions.Auth.LoginSteps.userAlreadyOnHomePageAgain()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mClick mentor profile button&amp;#27;[0m                                                                                    &amp;#27;[90m# step_definitions.Mentor.EditProfileMentorSteps.studentClickButtonProfile()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mClick edit mentor profile&amp;#27;[0m                                                                                      &amp;#27;[90m# step_definitions.Mentor.EditProfileMentorSteps.clickEditMentorProfile()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mMentor input old password &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;&quot;&amp;#27;[0m&amp;#27;[32m new password &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;&quot;&amp;#27;[0m&amp;#27;[32m and confirmation password &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;321&quot;&amp;#27;[0m                                  &amp;#27;[90m# step_definitions.Mentor.EditProfileMentorSteps.mentorInputOldPasswordNewPasswordAndConfirmationPassword(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mclick Update Password mentor button&amp;#27;[0m                                                                           &amp;#27;[90m# step_definitions.Mentor.EditProfileMentorSteps.clickUpdatePasswordMentorButton()&amp;#27;[0m
+  &amp;#27;[31mAnd &amp;#27;[0m&amp;#27;[31mvalidate Pop Up notification text &amp;#27;[0m&amp;#27;[31m&amp;#27;[1m&quot;old password, new password and confirmation password field cannot be empty&quot;&amp;#27;[0m &amp;#27;[90m# step_definitions.Mentor.EditProfileMentorSteps.validatePopUpNotification(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;swal2-html-container&apos;]&quot;}
+  (Session info: chrome=111.0.5563.148)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7e6c7a312827685ab9ab2626c07cdbd5, findElement {using=xpath, value=//div[@class=&apos;swal2-html-container&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mafaa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:1060}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:1060/devtool..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7e6c7a312827685ab9ab2626c07cdbd5
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy24.getText(Unknown Source)
+	at locator.EditProfileMentor.setValidatePopUpMessage(EditProfileMentor.java:195)
+	at step_definitions.Mentor.EditProfileMentorSteps.validatePopUpNotification(EditProfileMentorSteps.java:168)
+	at ✽.validate Pop Up notification text &quot;old password, new password and confirmation password field cannot be empty&quot;(classpath:features//Mentor/EditProfileMentor.feature:44)
+&amp;#27;[0m
+</system-out>
+    <system-err>Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 32068
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Apr 09, 2023 8:25:04 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 111, so returning the closest version found: 109
+</system-err>
+  </testcase>
+  <testcase classname="Edit Profile Mentor" name="Mentor Edit Certificate with valid parameter" time="42.185"/>
+  <testcase classname="Edit Profile Mentor" name="Mentor Edit Instrument with valid parameter" time="37.356"/>
+  <testcase classname="Edit Profile Mentor" name="Mentor Edit Genre with valid parameter" time="22.059">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;swal2-html-container&apos;]&quot;}
+  (Session info: chrome=111.0.5563.148)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [899002844ede4eb9ae30cad712d4937b, findElement {using=xpath, value=//div[@class=&apos;swal2-html-container&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mafaa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:1390}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:1390/devtool..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 899002844ede4eb9ae30cad712d4937b" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;swal2-html-container&apos;]&quot;}
+  (Session info: chrome=111.0.5563.148)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [899002844ede4eb9ae30cad712d4937b, findElement {using=xpath, value=//div[@class=&apos;swal2-html-container&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mafaa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:1390}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:1390/devtool..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 899002844ede4eb9ae30cad712d4937b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy24.getText(Unknown Source)
+	at locator.EditProfileMentor.setValidatePopUpMessage(EditProfileMentor.java:195)
+	at step_definitions.Mentor.EditProfileMentorSteps.validatePopUpNotification(EditProfileMentorSteps.java:168)
+	at ✽.validate Pop Up notification text &quot;success add mentor genre&quot;(classpath:features//Mentor/EditProfileMentor.feature:83)
+</error>
+    <system-out>
+@Capstone @EditProfileStudent
+Scenario: Mentor Edit Genre with valid parameter                                    &amp;#27;[90m# features//Mentor/EditProfileMentor.feature:74&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mUser click button login on home page&amp;#27;[0m                                        &amp;#27;[90m# step_definitions.Auth.LoginSteps.userClickButtonLoginOnHomePage()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mUser input &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;icadr@gmail.com&quot;&amp;#27;[0m&amp;#27;[32m as email &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;123&quot;&amp;#27;[0m&amp;#27;[32m as password and &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Mentor&quot;&amp;#27;[0m&amp;#27;[32m as role&amp;#27;[0m &amp;#27;[90m# step_definitions.Auth.LoginSteps.userInputAsEmailAsPasswordAndAsRole(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mClick login button&amp;#27;[0m                                                            &amp;#27;[90m# step_definitions.Auth.LoginSteps.clickLoginButton()&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mUser already on home page again&amp;#27;[0m                                              &amp;#27;[90m# step_definitions.Auth.LoginSteps.userAlreadyOnHomePageAgain()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mClick mentor profile button&amp;#27;[0m                                                   &amp;#27;[90m# step_definitions.Mentor.EditProfileMentorSteps.studentClickButtonProfile()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mClick edit mentor profile&amp;#27;[0m                                                     &amp;#27;[90m# step_definitions.Mentor.EditProfileMentorSteps.clickEditMentorProfile()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mMentor input genre &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Jazz&quot;&amp;#27;[0m                                                    &amp;#27;[90m# step_definitions.Mentor.EditProfileMentorSteps.mentorInputGenre(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mClick Update Genre Mentor button&amp;#27;[0m                                             &amp;#27;[90m# step_definitions.Mentor.EditProfileMentorSteps.clickUpdateGenreMentorButton()&amp;#27;[0m
+  &amp;#27;[31mAnd &amp;#27;[0m&amp;#27;[31mvalidate Pop Up notification text &amp;#27;[0m&amp;#27;[31m&amp;#27;[1m&quot;success add mentor genre&quot;&amp;#27;[0m                  &amp;#27;[90m# step_definitions.Mentor.EditProfileMentorSteps.validatePopUpNotification(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;swal2-html-container&apos;]&quot;}
+  (Session info: chrome=111.0.5563.148)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [899002844ede4eb9ae30cad712d4937b, findElement {using=xpath, value=//div[@class=&apos;swal2-html-container&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mafaa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:1390}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:1390/devtool..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 899002844ede4eb9ae30cad712d4937b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy24.getText(Unknown Source)
+	at locator.EditProfileMentor.setValidatePopUpMessage(EditProfileMentor.java:195)
+	at step_definitions.Mentor.EditProfileMentorSteps.validatePopUpNotification(EditProfileMentorSteps.java:168)
+	at ✽.validate Pop Up notification text &quot;success add mentor genre&quot;(classpath:features//Mentor/EditProfileMentor.feature:83)
+&amp;#27;[0m
+</system-out>
+    <system-err>Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 42796
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Apr 09, 2023 8:26:53 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 111, so returning the closest version found: 109
+</system-err>
+  </testcase>
+  <testcase classname="Filter dropdown" name="Filter instrument #1" time="15.478"/>
+  <testcase classname="Filter dropdown" name="Filter instrument #2" time="15.522"/>
+  <testcase classname="Filter dropdown" name="Filter instrument #3" time="16.42"/>
+  <testcase classname="Filter dropdown" name="Filter instrument #4" time="15.26"/>
+  <testcase classname="Filter dropdown" name="Filter instrument #5" time="15.287"/>
+  <testcase classname="Filter dropdown" name="Filter instrument #6" time="15.316"/>
+  <testcase classname="Filter dropdown" name="Filter instrument #7" time="16.248"/>
+  <testcase classname="Filter dropdown" name="Filter instrument #8" time="15.188"/>
+  <testcase classname="Filter dropdown" name="Filter Rating #1" time="15.275"/>
+  <testcase classname="Filter dropdown" name="Filter Rating #2" time="15.457"/>
+  <testcase classname="Filter dropdown" name="Filter Rating #3" time="16.276"/>
+  <testcase classname="Filter dropdown" name="Filter Rating #4" time="15.368"/>
+  <testcase classname="Filter dropdown" name="Filter Rating #5" time="15.26"/>
+  <testcase classname="Button next previous" name="Button next" time="18.997"/>
+  <testcase classname="Search Feature" name="Search #1" time="15.3"/>
+  <testcase classname="Search Feature" name="Search #2" time="15.36"/>
+  <testcase classname="Search Feature" name="Search #3" time="15.45"/>
+  <testcase classname="Search Feature" name="Search #4" time="15.478"/>
+  <testcase classname="[Positive Case] Validation And Create Ulasan" name="Student Create Ulasan" time="37.024"/>
+  <testcase classname="[Negative Case] Validation And Create Ulasan" name="Validate Field Comments with Over Character" time="32.893"/>
+  <testcase classname="[Negative Case] Validation And Create Ulasan" name="Student Do Not Fill In The Field Comment" time="22.652">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//tbody[1]/tr[1]//button[@id=&apos;btn-linkulasan&apos;]&quot;}
+  (Session info: chrome=111.0.5563.148)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2d21cf8b452519ee4d9cada9cd4d6138, findElement {using=xpath, value=//tbody[1]/tr[1]//button[@id=&apos;btn-linkulasan&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mafaa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:3183}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:3183/devtool..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2d21cf8b452519ee4d9cada9cd4d6138" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//tbody[1]/tr[1]//button[@id=&apos;btn-linkulasan&apos;]&quot;}
+  (Session info: chrome=111.0.5563.148)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2d21cf8b452519ee4d9cada9cd4d6138, findElement {using=xpath, value=//tbody[1]/tr[1]//button[@id=&apos;btn-linkulasan&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mafaa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:3183}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:3183/devtool..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2d21cf8b452519ee4d9cada9cd4d6138
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy24.click(Unknown Source)
+	at locator.Rating.Ulasan.setBeriUlasan(Ulasan.java:93)
+	at step_definitions.Rating.UlasanStepDef.studentClickButtonBeriUlasan(UlasanStepDef.java:64)
+	at ✽.Student click button beri ulasan(classpath:features//Rating/NegativeCaseCreateUlasan.feature:27)
+</error>
+    <system-out>
+@Capstone @CreateUlasanNegativeCase
+Scenario: Student Do Not Fill In The Field Comment                                                     &amp;#27;[90m# features//Rating/NegativeCaseCreateUlasan.feature:19&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mUser click button login on home page&amp;#27;[0m                                                           &amp;#27;[90m# step_definitions.Auth.LoginSteps.userClickButtonLoginOnHomePage()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mUser input &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;studentmusiclab@gmail.com&quot;&amp;#27;[0m&amp;#27;[32m as email &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;@Qwerty1234&quot;&amp;#27;[0m&amp;#27;[32m as password and &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Student&quot;&amp;#27;[0m&amp;#27;[32m as role&amp;#27;[0m &amp;#27;[90m# step_definitions.Auth.LoginSteps.userInputAsEmailAsPasswordAndAsRole(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mClick login button&amp;#27;[0m                                                                               &amp;#27;[90m# step_definitions.Auth.LoginSteps.clickLoginButton()&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mUser already on home page again&amp;#27;[0m                                                                 &amp;#27;[90m# step_definitions.Auth.LoginSteps.userAlreadyOnHomePageAgain()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mStudent click button profile&amp;#27;[0m                                                                     &amp;#27;[90m# step_definitions.Rating.UlasanStepDef.studentClickButtonProfile()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mStudent click button jadwal&amp;#27;[0m                                                                      &amp;#27;[90m# step_definitions.Rating.UlasanStepDef.studentClickButtonJadwal()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mValidate history belajar page -Beri Ulasan&amp;#27;[0m                                                       &amp;#27;[90m# step_definitions.Rating.UlasanStepDef.validatePageHistoryBelajarBeriUlasan()&amp;#27;[0m
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mStudent click button beri ulasan&amp;#27;[0m                                                                &amp;#27;[90m# step_definitions.Rating.UlasanStepDef.studentClickButtonBeriUlasan()&amp;#27;[0m
+      &amp;#27;[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//tbody[1]/tr[1]//button[@id=&apos;btn-linkulasan&apos;]&quot;}
+  (Session info: chrome=111.0.5563.148)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2d21cf8b452519ee4d9cada9cd4d6138, findElement {using=xpath, value=//tbody[1]/tr[1]//button[@id=&apos;btn-linkulasan&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mafaa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:3183}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:3183/devtool..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2d21cf8b452519ee4d9cada9cd4d6138
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy24.click(Unknown Source)
+	at locator.Rating.Ulasan.setBeriUlasan(Ulasan.java:93)
+	at step_definitions.Rating.UlasanStepDef.studentClickButtonBeriUlasan(UlasanStepDef.java:64)
+	at ✽.Student click button beri ulasan(classpath:features//Rating/NegativeCaseCreateUlasan.feature:27)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mStudent give ratings 5 stars&amp;#27;[0m                                                                     &amp;#27;[90m# step_definitions.Rating.UlasanStepDef.giveStartRatingLima()&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mClick submit ulasan&amp;#27;[0m                                                                             &amp;#27;[90m# step_definitions.Rating.UlasanStepDef.clickSubmitUlasan()&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mValidate Pop-up message failed give ratings&amp;#27;[0m                                                      &amp;#27;[90m# step_definitions.Rating.UlasanStepDef.validateFailedGiveRatings()&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mClick Button Log Out&amp;#27;[0m                                                                             &amp;#27;[90m# step_definitions.Rating.UlasanStepDef.clickBtnLogout()&amp;#27;[0m
+</system-out>
+    <system-err>Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 35261
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Apr 09, 2023 8:33:08 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 111, so returning the closest version found: 109
+</system-err>
+  </testcase>
+  <testcase classname="[Negative Case] Validation And Create Ulasan" name="Student Not Give Stars Rating" time="33.927"/>
+  <testcase classname="[Negative Case] Validation And Create Ulasan" name="Student Create Ulasan with blank content" time="35.198"/>
+  <testcase classname="Edit Profile Student" name="Student Edit Profile valid parameters" time="34.064">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@class=&apos;file-input h-10 w-10/12 lg:w-full lg:max-w-xs flex justify-center bg-white mx-auto mt-10 border-none&apos;]&quot;}
+  (Session info: chrome=111.0.5563.148)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fc5cc4426b3ec95b5924bd035128749b, findElement {using=xpath, value=//input[@class=&apos;file-input h-10 w-10/12 lg:w-full lg:max-w-xs flex justify-center bg-white mx-auto mt-10 border-none&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mafaa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:3504}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:3504/devtool..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fc5cc4426b3ec95b5924bd035128749b" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@class=&apos;file-input h-10 w-10/12 lg:w-full lg:max-w-xs flex justify-center bg-white mx-auto mt-10 border-none&apos;]&quot;}
+  (Session info: chrome=111.0.5563.148)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fc5cc4426b3ec95b5924bd035128749b, findElement {using=xpath, value=//input[@class=&apos;file-input h-10 w-10/12 lg:w-full lg:max-w-xs flex justify-center bg-white mx-auto mt-10 border-none&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mafaa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:3504}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:3504/devtool..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fc5cc4426b3ec95b5924bd035128749b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy24.sendKeys(Unknown Source)
+	at locator.EditProfileMentor.setFotoCertificateMentor(EditProfileMentor.java:137)
+	at step_definitions.Student.EditProfileStudentSteps.mentorInputPhotoCertificate(EditProfileStudentSteps.java:96)
+	at ✽.Student input photo in profile photo(classpath:features//Student/EditProfileStudent.feature:12)
+</error>
+    <system-out>
+@Capstone @EditProfileStudent
+Scenario: Student Edit Profile valid parameters                                                                                                             &amp;#27;[90m# features//Student/EditProfileStudent.feature:4&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mUser click button login on home page&amp;#27;[0m                                                                                                                &amp;#27;[90m# step_definitions.Auth.LoginSteps.userClickButtonLoginOnHomePage()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mUser input &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;icaaisyahdewi@gmail.com&quot;&amp;#27;[0m&amp;#27;[32m as email &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;123&quot;&amp;#27;[0m&amp;#27;[32m as password and &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Student&quot;&amp;#27;[0m&amp;#27;[32m as role&amp;#27;[0m                                                                &amp;#27;[90m# step_definitions.Auth.LoginSteps.userInputAsEmailAsPasswordAndAsRole(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mClick login button&amp;#27;[0m                                                                                                                                    &amp;#27;[90m# step_definitions.Auth.LoginSteps.clickLoginButton()&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mUser already on home page again&amp;#27;[0m                                                                                                                      &amp;#27;[90m# step_definitions.Auth.LoginSteps.userAlreadyOnHomePageAgain()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mClick student profile button&amp;#27;[0m                                                                                                                          &amp;#27;[90m# step_definitions.Student.EditProfileStudentSteps.studentClickButtonProfile()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mClick edit student profile&amp;#27;[0m                                                                                                                            &amp;#27;[90m# step_definitions.Student.EditProfileStudentSteps.clickEditStudentProfile()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mStudent input nama lengkap &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Aisyah Dewi&quot;&amp;#27;[0m&amp;#27;[32m jenis kelamin &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Female&quot;&amp;#27;[0m&amp;#27;[32m no. HP &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;081908281037&quot;&amp;#27;[0m&amp;#27;[32m email &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;icaaisyahdewi@gmail.com&quot;&amp;#27;[0m&amp;#27;[32m and alamat &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;komp. bppt i9 b23&quot;&amp;#27;[0m &amp;#27;[90m# step_definitions.Student.EditProfileStudentSteps.studentInputNamaLengkapJenisKelaminNoHPEmailAndAlamat(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[31mAnd &amp;#27;[0m&amp;#27;[31mStudent input photo in profile photo&amp;#27;[0m                                                                                                                  &amp;#27;[90m# step_definitions.Student.EditProfileStudentSteps.mentorInputPhotoCertificate()&amp;#27;[0m
+      &amp;#27;[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@class=&apos;file-input h-10 w-10/12 lg:w-full lg:max-w-xs flex justify-center bg-white mx-auto mt-10 border-none&apos;]&quot;}
+  (Session info: chrome=111.0.5563.148)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fc5cc4426b3ec95b5924bd035128749b, findElement {using=xpath, value=//input[@class=&apos;file-input h-10 w-10/12 lg:w-full lg:max-w-xs flex justify-center bg-white mx-auto mt-10 border-none&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mafaa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:3504}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:3504/devtool..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fc5cc4426b3ec95b5924bd035128749b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy24.sendKeys(Unknown Source)
+	at locator.EditProfileMentor.setFotoCertificateMentor(EditProfileMentor.java:137)
+	at step_definitions.Student.EditProfileStudentSteps.mentorInputPhotoCertificate(EditProfileStudentSteps.java:96)
+	at ✽.Student input photo in profile photo(classpath:features//Student/EditProfileStudent.feature:12)
+&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mclick Update Student button&amp;#27;[0m                                                                                                                          &amp;#27;[90m# step_definitions.Student.EditProfileStudentSteps.clickUpdateStudentButton()&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mvalidate Pop Up notification text &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;success update student profile&quot;&amp;#27;[0m                                                                                    &amp;#27;[90m# step_definitions.Mentor.EditProfileMentorSteps.validatePopUpNotification(java.lang.String)&amp;#27;[0m
+</system-out>
+    <system-err>Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 14274
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Apr 09, 2023 8:34:40 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 111, so returning the closest version found: 109
+</system-err>
+  </testcase>
+  <testcase classname="Edit Profile Student" name="Student Edit Profile with one or more parameter #1" time="37.363">
+    <failure message="expected:&lt;[success update student profile]&gt; but was:&lt;[validate: Key: &apos;Core.Phone&apos; Error:Field validation for &apos;Phone&apos; failed on the &apos;number&apos; tag]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[success update student profile]&gt; but was:&lt;[validate: Key: &apos;Core.Phone&apos; Error:Field validation for &apos;Phone&apos; failed on the &apos;number&apos; tag]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at step_definitions.Mentor.EditProfileMentorSteps.validatePopUpNotification(EditProfileMentorSteps.java:168)
+	at ✽.validate Pop Up notification text &quot;success update student profile&quot;(classpath:features//Student/EditProfileStudent.feature:26)
+</failure>
+    <system-out>
+@Capstone @EditProfileStudent
+Scenario Outline: Student Edit Profile with one or more parameter                                                          &amp;#27;[90m# features//Student/EditProfileStudent.feature:29&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mUser click button login on home page&amp;#27;[0m                                                                               &amp;#27;[90m# step_definitions.Auth.LoginSteps.userClickButtonLoginOnHomePage()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mUser input &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;icaaisyahdewi@gmail.com&quot;&amp;#27;[0m&amp;#27;[32m as email &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;123&quot;&amp;#27;[0m&amp;#27;[32m as password and &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Student&quot;&amp;#27;[0m&amp;#27;[32m as role&amp;#27;[0m                               &amp;#27;[90m# step_definitions.Auth.LoginSteps.userInputAsEmailAsPasswordAndAsRole(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mClick login button&amp;#27;[0m                                                                                                   &amp;#27;[90m# step_definitions.Auth.LoginSteps.clickLoginButton()&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mUser already on home page again&amp;#27;[0m                                                                                     &amp;#27;[90m# step_definitions.Auth.LoginSteps.userAlreadyOnHomePageAgain()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mClick student profile button&amp;#27;[0m                                                                                         &amp;#27;[90m# step_definitions.Student.EditProfileStudentSteps.studentClickButtonProfile()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mClick edit student profile&amp;#27;[0m                                                                                           &amp;#27;[90m# step_definitions.Student.EditProfileStudentSteps.clickEditStudentProfile()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mStudent input nama lengkap &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;ica&quot;&amp;#27;[0m&amp;#27;[32m jenis kelamin &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Female&quot;&amp;#27;[0m&amp;#27;[32m no. HP &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;&quot;&amp;#27;[0m&amp;#27;[32m email &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;icaaisyahdewi@gmail.com&quot;&amp;#27;[0m&amp;#27;[32m and alamat &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;bppt&quot;&amp;#27;[0m &amp;#27;[90m# step_definitions.Student.EditProfileStudentSteps.studentInputNamaLengkapJenisKelaminNoHPEmailAndAlamat(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mclick Update Student button&amp;#27;[0m                                                                                         &amp;#27;[90m# step_definitions.Student.EditProfileStudentSteps.clickUpdateStudentButton()&amp;#27;[0m
+  &amp;#27;[31mAnd &amp;#27;[0m&amp;#27;[31mvalidate Pop Up notification text &amp;#27;[0m&amp;#27;[31m&amp;#27;[1m&quot;success update student profile&quot;&amp;#27;[0m                                                   &amp;#27;[90m# step_definitions.Mentor.EditProfileMentorSteps.validatePopUpNotification(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: expected:&lt;[success update student profile]&gt; but was:&lt;[validate: Key: &apos;Core.Phone&apos; Error:Field validation for &apos;Phone&apos; failed on the &apos;number&apos; tag]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at step_definitions.Mentor.EditProfileMentorSteps.validatePopUpNotification(EditProfileMentorSteps.java:168)
+	at ✽.validate Pop Up notification text &quot;success update student profile&quot;(classpath:features//Student/EditProfileStudent.feature:26)
+&amp;#27;[0m
+</system-out>
+    <system-err>Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 27410
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Apr 09, 2023 8:35:14 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 111, so returning the closest version found: 109
+</system-err>
+  </testcase>
+  <testcase classname="Edit Profile Student" name="Student Edit Profile with one or more parameter #2" time="37.688">
+    <failure message="expected:&lt;[success update student profile]&gt; but was:&lt;[validate: Key: &apos;Core.Name&apos; Error:Field validation for &apos;Name&apos; failed on the &apos;required&apos; tag]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[success update student profile]&gt; but was:&lt;[validate: Key: &apos;Core.Name&apos; Error:Field validation for &apos;Name&apos; failed on the &apos;required&apos; tag]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at step_definitions.Mentor.EditProfileMentorSteps.validatePopUpNotification(EditProfileMentorSteps.java:168)
+	at ✽.validate Pop Up notification text &quot;success update student profile&quot;(classpath:features//Student/EditProfileStudent.feature:26)
+</failure>
+    <system-out>
+@Capstone @EditProfileStudent
+Scenario Outline: Student Edit Profile with one or more parameter                                                         &amp;#27;[90m# features//Student/EditProfileStudent.feature:30&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mUser click button login on home page&amp;#27;[0m                                                                              &amp;#27;[90m# step_definitions.Auth.LoginSteps.userClickButtonLoginOnHomePage()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mUser input &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;icaaisyahdewi@gmail.com&quot;&amp;#27;[0m&amp;#27;[32m as email &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;123&quot;&amp;#27;[0m&amp;#27;[32m as password and &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Student&quot;&amp;#27;[0m&amp;#27;[32m as role&amp;#27;[0m                              &amp;#27;[90m# step_definitions.Auth.LoginSteps.userInputAsEmailAsPasswordAndAsRole(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mClick login button&amp;#27;[0m                                                                                                  &amp;#27;[90m# step_definitions.Auth.LoginSteps.clickLoginButton()&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mUser already on home page again&amp;#27;[0m                                                                                    &amp;#27;[90m# step_definitions.Auth.LoginSteps.userAlreadyOnHomePageAgain()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mClick student profile button&amp;#27;[0m                                                                                        &amp;#27;[90m# step_definitions.Student.EditProfileStudentSteps.studentClickButtonProfile()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mClick edit student profile&amp;#27;[0m                                                                                          &amp;#27;[90m# step_definitions.Student.EditProfileStudentSteps.clickEditStudentProfile()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mStudent input nama lengkap &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;&quot;&amp;#27;[0m&amp;#27;[32m jenis kelamin &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;&quot;&amp;#27;[0m&amp;#27;[32m no. HP &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;081908281036&quot;&amp;#27;[0m&amp;#27;[32m email &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;icaaisyahdewi@gmail.com&quot;&amp;#27;[0m&amp;#27;[32m and alamat &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;&quot;&amp;#27;[0m &amp;#27;[90m# step_definitions.Student.EditProfileStudentSteps.studentInputNamaLengkapJenisKelaminNoHPEmailAndAlamat(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mclick Update Student button&amp;#27;[0m                                                                                        &amp;#27;[90m# step_definitions.Student.EditProfileStudentSteps.clickUpdateStudentButton()&amp;#27;[0m
+  &amp;#27;[31mAnd &amp;#27;[0m&amp;#27;[31mvalidate Pop Up notification text &amp;#27;[0m&amp;#27;[31m&amp;#27;[1m&quot;success update student profile&quot;&amp;#27;[0m                                                  &amp;#27;[90m# step_definitions.Mentor.EditProfileMentorSteps.validatePopUpNotification(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: expected:&lt;[success update student profile]&gt; but was:&lt;[validate: Key: &apos;Core.Name&apos; Error:Field validation for &apos;Name&apos; failed on the &apos;required&apos; tag]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at step_definitions.Mentor.EditProfileMentorSteps.validatePopUpNotification(EditProfileMentorSteps.java:168)
+	at ✽.validate Pop Up notification text &quot;success update student profile&quot;(classpath:features//Student/EditProfileStudent.feature:26)
+&amp;#27;[0m
+</system-out>
+    <system-err>Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 25636
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Apr 09, 2023 8:35:51 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 111, so returning the closest version found: 109
+</system-err>
+  </testcase>
+  <testcase classname="Edit Profile Student" name="Student Edit Profile with one or more parameter #3" time="40.288">
+    <failure message="expected:&lt;[success update student profile]&gt; but was:&lt;[validate: Key: &apos;Core.Phone&apos; Error:Field validation for &apos;Phone&apos; failed on the &apos;number&apos; tag]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[success update student profile]&gt; but was:&lt;[validate: Key: &apos;Core.Phone&apos; Error:Field validation for &apos;Phone&apos; failed on the &apos;number&apos; tag]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at step_definitions.Mentor.EditProfileMentorSteps.validatePopUpNotification(EditProfileMentorSteps.java:168)
+	at ✽.validate Pop Up notification text &quot;success update student profile&quot;(classpath:features//Student/EditProfileStudent.feature:26)
+</failure>
+    <system-out>
+@Capstone @EditProfileStudent
+Scenario Outline: Student Edit Profile with one or more parameter                                                        &amp;#27;[90m# features//Student/EditProfileStudent.feature:31&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mUser click button login on home page&amp;#27;[0m                                                                             &amp;#27;[90m# step_definitions.Auth.LoginSteps.userClickButtonLoginOnHomePage()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mUser input &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;icaaisyahdewi@gmail.com&quot;&amp;#27;[0m&amp;#27;[32m as email &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;123&quot;&amp;#27;[0m&amp;#27;[32m as password and &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Student&quot;&amp;#27;[0m&amp;#27;[32m as role&amp;#27;[0m                             &amp;#27;[90m# step_definitions.Auth.LoginSteps.userInputAsEmailAsPasswordAndAsRole(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mClick login button&amp;#27;[0m                                                                                                 &amp;#27;[90m# step_definitions.Auth.LoginSteps.clickLoginButton()&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mUser already on home page again&amp;#27;[0m                                                                                   &amp;#27;[90m# step_definitions.Auth.LoginSteps.userAlreadyOnHomePageAgain()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mClick student profile button&amp;#27;[0m                                                                                       &amp;#27;[90m# step_definitions.Student.EditProfileStudentSteps.studentClickButtonProfile()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mClick edit student profile&amp;#27;[0m                                                                                         &amp;#27;[90m# step_definitions.Student.EditProfileStudentSteps.clickEditStudentProfile()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mStudent input nama lengkap &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Aisyah Dewi&quot;&amp;#27;[0m&amp;#27;[32m jenis kelamin &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;&quot;&amp;#27;[0m&amp;#27;[32m no. HP &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;&quot;&amp;#27;[0m&amp;#27;[32m email &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;icaaisyahdewi@gmail.com&quot;&amp;#27;[0m&amp;#27;[32m and alamat &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;&quot;&amp;#27;[0m &amp;#27;[90m# step_definitions.Student.EditProfileStudentSteps.studentInputNamaLengkapJenisKelaminNoHPEmailAndAlamat(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mclick Update Student button&amp;#27;[0m                                                                                       &amp;#27;[90m# step_definitions.Student.EditProfileStudentSteps.clickUpdateStudentButton()&amp;#27;[0m
+  &amp;#27;[31mAnd &amp;#27;[0m&amp;#27;[31mvalidate Pop Up notification text &amp;#27;[0m&amp;#27;[31m&amp;#27;[1m&quot;success update student profile&quot;&amp;#27;[0m                                                 &amp;#27;[90m# step_definitions.Mentor.EditProfileMentorSteps.validatePopUpNotification(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.junit.ComparisonFailure: expected:&lt;[success update student profile]&gt; but was:&lt;[validate: Key: &apos;Core.Phone&apos; Error:Field validation for &apos;Phone&apos; failed on the &apos;number&apos; tag]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at step_definitions.Mentor.EditProfileMentorSteps.validatePopUpNotification(EditProfileMentorSteps.java:168)
+	at ✽.validate Pop Up notification text &quot;success update student profile&quot;(classpath:features//Student/EditProfileStudent.feature:26)
+&amp;#27;[0m
+</system-out>
+    <system-err>Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 11817
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Apr 09, 2023 8:36:29 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 111, so returning the closest version found: 109
+</system-err>
+  </testcase>
+  <testcase classname="Edit Profile Student" name="Student Edit Profile with invalid parameter #1" time="40.92"/>
+  <testcase classname="Edit Profile Student" name="Student Edit Profile with invalid parameter #2" time="40.9"/>
+  <testcase classname="Edit Profile Student" name="Student Edit Profile with invalid parameter #3" time="40.9"/>
+  <testcase classname="Edit Profile Student" name="Student Edit Password with valid parameter #1" time="43.934"/>
+  <testcase classname="Edit Profile Student" name="Student Edit Password with valid parameter #2" time="43.841"/>
+  <testcase classname="Edit Profile Student" name="Student Edit Password with invalid parameter #1" time="40.917"/>
+  <testcase classname="Edit Profile Student" name="Student Edit Password with invalid parameter #2" time="39.816"/>
+  <testcase classname="Edit Profile Student" name="Student Edit Password with invalid parameter #3" time="40.777"/>
+  <testcase classname="[Positive Case] Check Schedule Mentors" name="Student Check Available Schedule Mentors" time="44.992"/>
+  <testcase classname="[Positive Case] Payment Method" name="Student will make payment transactions without Choose Method Payment" time="45.881">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1[@class=&apos;text-button font-bold text-2xl&apos;]&quot;}
+  (Session info: chrome=111.0.5563.148)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f15f8695a0826133245f9271b494f3dd, findElement {using=xpath, value=//h1[@class=&apos;text-button font-bold text-2xl&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mafaa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:5205}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:5205/devtool..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f15f8695a0826133245f9271b494f3dd" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1[@class=&apos;text-button font-bold text-2xl&apos;]&quot;}
+  (Session info: chrome=111.0.5563.148)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f15f8695a0826133245f9271b494f3dd, findElement {using=xpath, value=//h1[@class=&apos;text-button font-bold text-2xl&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mafaa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:5205}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:5205/devtool..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f15f8695a0826133245f9271b494f3dd
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy24.isEnabled(Unknown Source)
+	at locator.Rating.Ulasan.setValidateHistoryBelajar(Ulasan.java:84)
+	at step_definitions.Rating.UlasanStepDef.validatePageHistoryBelajar(UlasanStepDef.java:49)
+	at ✽.Validate history belajar page(classpath:features//Transaction/A_PositiveCasePaymentMethod.feature:23)
+</error>
+    <system-out>
+@Capstone @PaymentMethodPositiveCase @ClickPaymentButton
+Scenario: Student will make payment transactions without Choose Method Payment                 &amp;#27;[90m# features//Transaction/A_PositiveCasePaymentMethod.feature:6&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mUser click button login on home page&amp;#27;[0m                                                   &amp;#27;[90m# step_definitions.Auth.LoginSteps.userClickButtonLoginOnHomePage()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mUser input &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;bilal123@gmail.com&quot;&amp;#27;[0m&amp;#27;[32m as email &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;1234567890&quot;&amp;#27;[0m&amp;#27;[32m as password and &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Student&quot;&amp;#27;[0m&amp;#27;[32m as role&amp;#27;[0m &amp;#27;[90m# step_definitions.Auth.LoginSteps.userInputAsEmailAsPasswordAndAsRole(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mClick login button&amp;#27;[0m                                                                       &amp;#27;[90m# step_definitions.Auth.LoginSteps.clickLoginButton()&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mUser already on home page again&amp;#27;[0m                                                         &amp;#27;[90m# step_definitions.Auth.LoginSteps.userAlreadyOnHomePageAgain()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mStudent click button Find Mentor&amp;#27;[0m                                                         &amp;#27;[90m# step_definitions.Transaction.CheckAvailabelMentorStepDef.studentClickButtonFindMentor()&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mStudent choose mentors&amp;#27;[0m                                                                  &amp;#27;[90m# step_definitions.Transaction.CheckAvailabelMentorStepDef.studentChooseMentors()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mValidate Mentor Profile page&amp;#27;[0m                                                             &amp;#27;[90m# step_definitions.Transaction.CheckAvailabelMentorStepDef.validateMentorProfilePage()&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mStudent choose course&amp;#27;[0m                                                                   &amp;#27;[90m# step_definitions.Transaction.CheckAvailabelMentorStepDef.studentChooseCourse()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mValidate Name Course page&amp;#27;[0m                                                                &amp;#27;[90m# step_definitions.Transaction.CheckAvailabelMentorStepDef.validateNameCoursePage()&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mClick button beli kursus&amp;#27;[0m                                                                &amp;#27;[90m# step_definitions.Transaction.CheckAvailabelMentorStepDef.studentClickBeliKursus()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mValidate Total Biaya course&amp;#27;[0m                                                              &amp;#27;[90m# step_definitions.Transaction.CheckAvailabelMentorStepDef.validateTotalBiayaCourse()&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mStudent set date course &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m10012026&amp;#27;[0m                                                        &amp;#27;[90m# step_definitions.Transaction.CheckAvailabelMentorStepDef.studentSetDate(int)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mStudent set pilih hari &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Wednesday&quot;&amp;#27;[0m                                                       &amp;#27;[90m# step_definitions.Transaction.CheckAvailabelMentorStepDef.studentPilihHariCourse(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mStudent click button check available&amp;#27;[0m                                                    &amp;#27;[90m# step_definitions.Transaction.CheckAvailabelMentorStepDef.clickButtonCheckAvail()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mValidate Pop-up message Schedule Mentor&amp;#27;[0m                                                  &amp;#27;[90m# step_definitions.Transaction.CheckAvailabelMentorStepDef.validatePopupMentorIsAvail()&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mStudent click button Continue Payment without select method&amp;#27;[0m                             &amp;#27;[90m# step_definitions.Transaction.PaymentMethodStepDef.clickBtnContinuePaymentWithoutChooseMethod()&amp;#27;[0m
+  &amp;#27;[31mAnd &amp;#27;[0m&amp;#27;[31mValidate history belajar page&amp;#27;[0m                                                            &amp;#27;[90m# step_definitions.Rating.UlasanStepDef.validatePageHistoryBelajar()&amp;#27;[0m
+      &amp;#27;[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1[@class=&apos;text-button font-bold text-2xl&apos;]&quot;}
+  (Session info: chrome=111.0.5563.148)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f15f8695a0826133245f9271b494f3dd, findElement {using=xpath, value=//h1[@class=&apos;text-button font-bold text-2xl&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\mafaa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:5205}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:5205/devtool..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f15f8695a0826133245f9271b494f3dd
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy24.isEnabled(Unknown Source)
+	at locator.Rating.Ulasan.setValidateHistoryBelajar(Ulasan.java:84)
+	at step_definitions.Rating.UlasanStepDef.validatePageHistoryBelajar(UlasanStepDef.java:49)
+	at ✽.Validate history belajar page(classpath:features//Transaction/A_PositiveCasePaymentMethod.feature:23)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mValidate New Schedule Student&amp;#27;[0m                                                            &amp;#27;[90m# step_definitions.Transaction.PaymentMethodStepDef.validateNewScheduleStudent()&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mClick Button Log Out&amp;#27;[0m                                                                     &amp;#27;[90m# step_definitions.Rating.UlasanStepDef.clickBtnLogout()&amp;#27;[0m
+</system-out>
+    <system-err>Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 30382
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Apr 09, 2023 8:43:26 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 111, so returning the closest version found: 109
+</system-err>
+  </testcase>
+  <testcase classname="[Positive Case] Payment Method" name="Student will make payment transactions with BCA Klik Method" time="79.811"/>
+  <testcase classname="[Negative Case] Check Schedule Mentors" name="Student Check Available Schedule Mentors with invalid date (Before Current Date)" time="44.844"/>
+  <testcase classname="[Negative Case] Check Schedule Mentors" name="Student Check Available Schedule Mentors without input date" time="43.881"/>
+  <testcase classname="[Negative Case] Check Schedule Mentors" name="Student Check Available Schedule Mentors without set pilih hari" time="42.947"/>
+  <testcase classname="[Negative Case] Check Schedule Mentors" name="Student Check Available Schedule Mentors without input date and pilih hari" time="41.453"/>
+  <testcase classname="[Negative Case] Check Schedule Mentors" name="Student Check Available Schedule Mentors with exiting Schedule" time="45.55"/>
+</testsuite>
