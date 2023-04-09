@@ -1,7 +1,7 @@
 # MUSICLAB - QE - WEB
 
 <div align="center">
-  <a href="https://github.com/group3-musiclab/MusicLab-QE-APITesting">
+  <a href="https://github.com/group3-musiclab/MusicLab-QE-WebTesting">
     <img src="Photo/logo-musiclab.webp" width="304" height="310">
   </a>
 
