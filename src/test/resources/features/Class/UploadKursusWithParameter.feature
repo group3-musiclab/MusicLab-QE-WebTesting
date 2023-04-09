@@ -1,7 +1,11 @@
-@Capstone @class
+@Capstone @Class
 Feature: class
 
   Scenario Outline : upload kursus with parameter
+     Given User click button login on home page
+     When User input "mafa.alfa13@gmail.com" as email "123" as password and "Mentor" as role
+     And Click login button
+     Then User already on home page again
      Given click profile button
      And click kursus saya
      And click upload new course
