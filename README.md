@@ -45,13 +45,13 @@
 - Clone it
 
 ```
-$ git clone https://github.com/group3-musiclab/MusicLab-QE-APITesting
+$ git clone https://github.com/group3-musiclab/MusicLab-QE-WebTesting.git
 ```
 
 - Go to directory
 
 ```
-$ cd MusicLab-QE-APITesting
+$ cd MusicLab-QE-WebTesting
 ```
 
 - Run the project with the capstone being the main tag
