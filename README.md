@@ -25,7 +25,7 @@
 ## 🛠 Technology Stack
 
 <div align="center">
-  <img src="Photo/web.png">
+  <img src="Photo/stack.png">
 </div>
 
 ## ⚙️ SUMMARY REPORT
